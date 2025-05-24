@@ -66,3 +66,5 @@ coverage/
 .temp
 .tmp
 .DS_Store
+/package/pnpm-lock.yaml
+/pnpm-lock.yaml
