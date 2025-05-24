@@ -4,6 +4,7 @@
 
 <template>
 Hello World
+  It's MyGO!!!!!
 </template>
 
 <style>
