@@ -1,7 +1,13 @@
 {
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "dev:example": "pnpm -C example dev"
+  },
   "packageManager": "pnpm@10.10.0",
+  "workspaces": [
+    "package",
+    "example"
+  ],
   "devDependencies": {
     "@biomejs/biome": "1.9.4"
   }

@@ -1,5 +1,6 @@
 packages:
   - 'package'
+  - 'example'
 onlyBuiltDependencies:
   - '@biomejs/biome'
   - core-js

@@ -7,8 +7,10 @@ export default defineConfig({
             format: 'esm',
             syntax: ['node 18'],
             dts: true,
+
         },
     ],
+
     output: {
         target: 'web',
     },
