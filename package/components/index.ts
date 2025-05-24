@@ -1,9 +1,5 @@
-import ButtonPlugin, { VFButton } from './button';
+import Hello from "./hello/index.ts";
 
-export { VFButton };
-
-export default {
-  install(app: import('vue').App) {
-    app.use(ButtonPlugin);
-  }
-};
+const components = {
+    Hello,
+}
