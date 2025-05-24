@@ -9,7 +9,6 @@
     ]"
     :disabled="disabled"
     :type="htmlType"
-    @click="handleClick"
   >
     <slot name="icon-before" />
     <span v-if="$slots.default" class="f-button__text">
@@ -33,10 +32,7 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 
 const emit = defineEmits<ButtonEmits>();
 
-const handleClick = (event: MouseEvent) => {
-  if (props.disabled) return;
-  emit('click', event);
-};
+
 </script>
 
 <style>

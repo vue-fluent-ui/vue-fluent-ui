@@ -14,6 +14,11 @@ export default defineConfig({
     output: {
         target: 'web',
     },
+    source: {
+        entry: {
+            index: './index.ts'
+        }
+    },
     plugins: [pluginUnpluginVue()],
 
 });

@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
-    "lib": ["ES2021"],
+    "lib": ["ES2021", "DOM"],
     "module": "ESNext",
-    "noEmit": true,
+    "target": "ES2020",
+    "noEmit": false,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "./dist",
     "strict": true,
     "skipLibCheck": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
     "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "jsx": "preserve",
+    "jsxImportSource": "vue"
   },
-  "include": ["src"]
+  "include": ["."]
 }

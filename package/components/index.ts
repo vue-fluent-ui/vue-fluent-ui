@@ -1,6 +1,6 @@
-import ButtonPlugin, { Button } from './button';
+import ButtonPlugin, { VFButton } from './button';
 
-export { Button };
+export { VFButton };
 
 export default {
   install(app: import('vue').App) {
