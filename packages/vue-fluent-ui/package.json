@@ -1,15 +1,15 @@
 {
   "name": "vue-fluent-ui",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
-  "module": "./dist/vue-fluent-ui.es.js",
-  "main": "./dist/vue-fluent-ui.cjs.js",
+  "module": "./dist/vue-fluent-ui.js",
+  "main": "./dist/vue-fluent-ui.cjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/vue-fluent-ui.es.js",
-      "require": "./dist/vue-fluent-ui.cjs.js",
+      "import": "./dist/vue-fluent-ui.js",
+      "require": "./dist/vue-fluent-ui.cjs",
       "types": "./dist/index.d.ts"
     },
     "./style": "./dist/style.css"
@@ -19,8 +19,8 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": " vite build",
-    "build:publish": "pnpm run build & pnpm publish"
+    "build": "vite build",
+    "build:publish": "pnpm run build && pnpm publish --no-git-checks "
   },
   "peerDependencies": {
     "vue": "^3.5.13"
