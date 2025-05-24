@@ -1,6 +1,8 @@
 {
   "private": true,
-  "scripts": {
-  },
-  "packageManager": "pnpm@10.10.0"
+  "scripts": {},
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4"
+  }
 }
