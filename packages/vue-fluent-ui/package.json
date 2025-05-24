@@ -1,7 +1,7 @@
 {
   "name": "vue-fluent-ui",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "module": "./dist/vue-fluent-ui.es.js",
   "main": "./dist/vue-fluent-ui.cjs.js",
