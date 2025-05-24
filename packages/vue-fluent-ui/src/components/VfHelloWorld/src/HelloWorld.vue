@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <p>hello,world!</p>
+Hello World
 </template>
 
-<style scoped>
+<style>
 
 </style>
