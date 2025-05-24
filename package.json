@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build:publish": "pnpm -C packages/vue-fluent-ui build && pnpm -C packages/vue-fluent-ui publish"
+
   },
   "packageManager": "pnpm@10.10.0",
   "workspaces": [
