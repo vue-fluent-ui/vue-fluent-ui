@@ -1,5 +1,6 @@
 import HelloWorld from "./src/HelloWorld.vue";
+import {withInstall} from "../../utils/install.ts";
 
-// 只使用命名导出
-export const VfHelloWorld = HelloWorld;
+export const VfHelloWorld = withInstall(HelloWorld);
 export * from "./src/HelloWorld";
+export default VfHelloWorld;
