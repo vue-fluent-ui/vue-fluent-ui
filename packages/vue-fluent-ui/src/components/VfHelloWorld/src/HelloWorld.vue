@@ -1,17 +1,18 @@
 <!--这里放组件-->
 <!--注意不要用scoped-->
 <script setup lang="ts">
+import type {HelloWorldProps} from "./HelloWorld.ts";
 
+const props = defineProps<HelloWorldProps>()
 </script>
 
 <template>
-Hello World
-  It's MyGO!!!!!
-  <p id="girls-band-cry">crychic</p>
+  <p id="vf-hello-world">This is a HelloWorld Component</p>
+  <p>{{ props }}</p>
 </template>
 
 <style lang="scss">
-#girls-band-cry {
+#vf-hello-world {
   color: #00e3ff;
   font-size: 20px;
 }

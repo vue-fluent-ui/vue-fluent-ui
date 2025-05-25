@@ -5,14 +5,8 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-import { VfHelloWorld } from '../src'
-
-export default defineComponent({
-  name: 'App',
-  components: { VfHelloWorld }
-})
+<script lang="ts" setup>
+import {VfHelloWorld} from '../src'
 </script>
 
 <style scoped>

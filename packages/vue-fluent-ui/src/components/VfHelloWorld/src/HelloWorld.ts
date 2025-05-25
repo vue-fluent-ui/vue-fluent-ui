@@ -1,2 +1,4 @@
 // 这里放类型定义
-export const tip = "hello world"
+export interface HelloWorldProps {
+    msg: string,
+}
