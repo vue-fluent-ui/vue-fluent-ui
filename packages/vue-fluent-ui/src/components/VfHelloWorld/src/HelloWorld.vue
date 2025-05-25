@@ -1,3 +1,5 @@
+<!--这里放组件-->
+<!--注意不要用scoped-->
 <script setup lang="ts">
 
 </script>
