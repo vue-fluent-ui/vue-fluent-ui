@@ -5,7 +5,10 @@ import '../../../styles/index.scss'
 </script>
 
 <template>
+  <div class="vf-provider">
     <slot></slot>
+  </div>
+
 </template>
 
 <style lang="scss">
