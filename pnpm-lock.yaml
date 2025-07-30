@@ -17,6 +17,9 @@ importers:
       vue:
         specifier: ^3.5.17
         version: 3.5.18(typescript@5.8.3)
+      vue-fluent-ui:
+        specifier: workspace:*
+        version: link:../vue-fluent-ui
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^6.0.0
