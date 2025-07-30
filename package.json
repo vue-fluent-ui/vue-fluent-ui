@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "concurrently -n \"Library,Playground\" \"pnpm --filter vue-fluent-ui dev\" \"pnpm --filter playground dev\""
+    "dev": "pnpm --filter vue-fluent-ui build && concurrently -n \"Library,Playground\" \"pnpm --filter vue-fluent-ui dev\" \"pnpm --filter playground dev\""
   },
   "packageManager": "pnpm@10.10.0",
   "devDependencies": {

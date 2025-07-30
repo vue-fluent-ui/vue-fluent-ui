@@ -12,7 +12,7 @@
       "import": "./dist/vue-fluent-ui.js",
       "require": "./dist/vue-fluent-ui.cjs"
     },
-    "./style": "./dist/style.css"
+    "./style.css": "./dist/vue-fluent-ui.css"
   },
   "files": [
     "dist"
