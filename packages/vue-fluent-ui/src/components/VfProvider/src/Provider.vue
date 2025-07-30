@@ -5,9 +5,8 @@ import '../../../styles/index.scss'
 </script>
 
 <template>
-  <div class="vf-provider">
-    <slot></slot>
-  </div>
+
+  <slot></slot>
 
 </template>
 
