@@ -1,2 +1,2 @@
-export * from "@components/VfHelloWorld"
-export * from "@components/VfProvider"
+export * from "./VfHelloWorld"
+export * from "./VfProvider"

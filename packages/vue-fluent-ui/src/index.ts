@@ -1,4 +1,4 @@
-export * from "@components/index";
+export * from "./components/index";
 import * as components from "./components"
 import type {App} from "vue";
 
