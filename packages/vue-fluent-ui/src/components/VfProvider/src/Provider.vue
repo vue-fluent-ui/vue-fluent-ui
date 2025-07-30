@@ -8,5 +8,7 @@ import '../../../styles/index.scss'
 </template>
 
 <style lang="scss">
-
+html {
+  background-color: red;
+}
 </style>
