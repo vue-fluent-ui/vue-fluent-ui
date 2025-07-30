@@ -16,7 +16,10 @@ export default defineConfig({
         },
         rollupOptions: {
             external: ['vue'],
-            treeshake: false
+            treeshake: false,
+            output: {
+                exports: 'named'
+            }
         }
     }
 })
