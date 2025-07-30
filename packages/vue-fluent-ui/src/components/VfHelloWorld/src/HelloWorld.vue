@@ -1,6 +1,6 @@
 <!--这里放组件-->
 <!--注意不要用scoped-->
-<script setup lang="ts">
+<script lang="ts" setup>
 import type {HelloWorldProps} from "./HelloWorld.ts";
 
 const props = defineProps<HelloWorldProps>()
@@ -13,8 +13,8 @@ const props = defineProps<HelloWorldProps>()
 
 <style lang="scss">
 #vf-hello-world {
-  color: #00e3ff;
   font-size: 20px;
+  color: #00e3ff;
 }
 
 </style>

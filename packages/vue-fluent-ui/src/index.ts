@@ -15,6 +15,7 @@ const install = (app: App) => {
     }
 }
 
+// noinspection JSUnusedGlobalSymbols
 export default {
     install
 }

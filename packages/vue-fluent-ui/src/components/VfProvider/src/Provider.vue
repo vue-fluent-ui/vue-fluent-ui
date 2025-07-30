@@ -1,12 +1,12 @@
 <!--提供主题，可以提供一些主题反正-->
-<script setup lang="ts">
+<script lang="ts" setup>
 import '../../../styles/index.scss'
 </script>
 
 <template>
-<slot></slot>
+  <slot></slot>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss">
 
 </style>

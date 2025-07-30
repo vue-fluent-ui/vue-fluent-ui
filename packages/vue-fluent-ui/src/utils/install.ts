@@ -15,7 +15,7 @@ export type SFCWithInstall<T> = T & Plugin
  * @returns 增强了 install 方法和额外组件的主组件。
  */
 // biome-ignore lint/suspicious/noExplicitAny: <explanation>
-export  const withInstall = <T, E extends Record<string, any>>(
+export const withInstall = <T, E extends Record<string, any>>(
     main: T,
     extra?: E
 ) => {
