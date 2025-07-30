@@ -1,4 +1,4 @@
-<!--提供主题，可以提供一些主题反正-->
+<!--提供一些配置-->
 <script lang="ts" setup>
 import '../../../styles/index.scss'
 </script>
