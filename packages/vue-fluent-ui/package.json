@@ -34,5 +34,8 @@
     "vite": "^6.3.5",
     "vite-plugin-dts": "^4.5.4",
     "vue-tsc": "^2.2.8"
+  },
+  "dependencies": {
+    "@vueuse/core": "^13.6.0"
   }
 }
