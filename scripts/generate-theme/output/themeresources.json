@@ -1,0 +1,2275 @@
+{
+    "ResourceDictionary": {
+        "ResourceDictionary.ThemeDictionaries": {
+            "ResourceDictionary": [
+                {
+                    "Color": [
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextFillColorPrimary"
+                        },
+                        {
+                            "#text": "#C5FFFFFF",
+                            "@_x:Key": "TextFillColorSecondary"
+                        },
+                        {
+                            "#text": "#87FFFFFF",
+                            "@_x:Key": "TextFillColorTertiary"
+                        },
+                        {
+                            "#text": "#5DFFFFFF",
+                            "@_x:Key": "TextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#E4000000",
+                            "@_x:Key": "TextFillColorInverse"
+                        },
+                        {
+                            "#text": "#5DFFFFFF",
+                            "@_x:Key": "AccentTextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorSelectedText"
+                        },
+                        {
+                            "#text": "#000000",
+                            "@_x:Key": "TextOnAccentFillColorPrimary"
+                        },
+                        {
+                            "#text": "#80000000",
+                            "@_x:Key": "TextOnAccentFillColorSecondary"
+                        },
+                        {
+                            "#text": "#87FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#0FFFFFFF",
+                            "@_x:Key": "ControlFillColorDefault"
+                        },
+                        {
+                            "#text": "#15FFFFFF",
+                            "@_x:Key": "ControlFillColorSecondary"
+                        },
+                        {
+                            "#text": "#08FFFFFF",
+                            "@_x:Key": "ControlFillColorTertiary"
+                        },
+                        {
+                            "#text": "#0BFFFFFF",
+                            "@_x:Key": "ControlFillColorDisabled"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlFillColorTransparent"
+                        },
+                        {
+                            "#text": "#B31E1E1E",
+                            "@_x:Key": "ControlFillColorInputActive"
+                        },
+                        {
+                            "#text": "#8BFFFFFF",
+                            "@_x:Key": "ControlStrongFillColorDefault"
+                        },
+                        {
+                            "#text": "#3FFFFFFF",
+                            "@_x:Key": "ControlStrongFillColorDisabled"
+                        },
+                        {
+                            "#text": "#454545",
+                            "@_x:Key": "ControlSolidFillColorDefault"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "SubtleFillColorTransparent"
+                        },
+                        {
+                            "#text": "#0FFFFFFF",
+                            "@_x:Key": "SubtleFillColorSecondary"
+                        },
+                        {
+                            "#text": "#0AFFFFFF",
+                            "@_x:Key": "SubtleFillColorTertiary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "SubtleFillColorDisabled"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#19000000",
+                            "@_x:Key": "ControlAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#0BFFFFFF",
+                            "@_x:Key": "ControlAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#12FFFFFF",
+                            "@_x:Key": "ControlAltFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlAltFillColorDisabled"
+                        },
+                        {
+                            "#text": "#B31C1C1C",
+                            "@_x:Key": "ControlOnImageFillColorDefault"
+                        },
+                        {
+                            "#text": "#1A1A1A",
+                            "@_x:Key": "ControlOnImageFillColorSecondary"
+                        },
+                        {
+                            "#text": "#131313",
+                            "@_x:Key": "ControlOnImageFillColorTertiary"
+                        },
+                        {
+                            "#text": "#1E1E1E",
+                            "@_x:Key": "ControlOnImageFillColorDisabled"
+                        },
+                        {
+                            "#text": "#28FFFFFF",
+                            "@_x:Key": "AccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#12FFFFFF",
+                            "@_x:Key": "ControlStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#18FFFFFF",
+                            "@_x:Key": "ControlStrokeColorSecondary"
+                        },
+                        {
+                            "#text": "#14FFFFFF",
+                            "@_x:Key": "ControlStrokeColorOnAccentDefault"
+                        },
+                        {
+                            "#text": "#23000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondary"
+                        },
+                        {
+                            "#text": "#37000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiary"
+                        },
+                        {
+                            "#text": "#33000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabled"
+                        },
+                        {
+                            "#text": "#6B000000",
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImage"
+                        },
+                        {
+                            "#text": "#19000000",
+                            "@_x:Key": "CardStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#1C1C1C",
+                            "@_x:Key": "CardStrokeColorDefaultSolid"
+                        },
+                        {
+                            "#text": "#8BFFFFFF",
+                            "@_x:Key": "ControlStrongStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#28FFFFFF",
+                            "@_x:Key": "ControlStrongStrokeColorDisabled"
+                        },
+                        {
+                            "#text": "#66757575",
+                            "@_x:Key": "SurfaceStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#33000000",
+                            "@_x:Key": "SurfaceStrokeColorFlyout"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "SurfaceStrokeColorInverse"
+                        },
+                        {
+                            "#text": "#15FFFFFF",
+                            "@_x:Key": "DividerStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "FocusStrokeColorOuter"
+                        },
+                        {
+                            "#text": "#B3000000",
+                            "@_x:Key": "FocusStrokeColorInner"
+                        },
+                        {
+                            "#text": "#0DFFFFFF",
+                            "@_x:Key": "CardBackgroundFillColorDefault"
+                        },
+                        {
+                            "#text": "#08FFFFFF",
+                            "@_x:Key": "CardBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#4D000000",
+                            "@_x:Key": "SmokeFillColorDefault"
+                        },
+                        {
+                            "#text": "#4C3A3A3A",
+                            "@_x:Key": "LayerFillColorDefault"
+                        },
+                        {
+                            "#text": "#0DFFFFFF",
+                            "@_x:Key": "LayerFillColorAlt"
+                        },
+                        {
+                            "#text": "#09FFFFFF",
+                            "@_x:Key": "LayerOnAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#09FFFFFF",
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#733A3A3A",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefault"
+                        },
+                        {
+                            "#text": "#0FFFFFFF",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#2C2C2C",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#202020",
+                            "@_x:Key": "SolidBackgroundFillColorBase"
+                        },
+                        {
+                            "#text": "#1C1C1C",
+                            "@_x:Key": "SolidBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#282828",
+                            "@_x:Key": "SolidBackgroundFillColorTertiary"
+                        },
+                        {
+                            "#text": "#2C2C2C",
+                            "@_x:Key": "SolidBackgroundFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#00202020",
+                            "@_x:Key": "SolidBackgroundFillColorTransparent"
+                        },
+                        {
+                            "#text": "#0A0A0A",
+                            "@_x:Key": "SolidBackgroundFillColorBaseAlt"
+                        },
+                        {
+                            "#text": "#6CCB5F",
+                            "@_x:Key": "SystemFillColorSuccess"
+                        },
+                        {
+                            "#text": "#FCE100",
+                            "@_x:Key": "SystemFillColorCaution"
+                        },
+                        {
+                            "#text": "#FF99A4",
+                            "@_x:Key": "SystemFillColorCritical"
+                        },
+                        {
+                            "#text": "#8BFFFFFF",
+                            "@_x:Key": "SystemFillColorNeutral"
+                        },
+                        {
+                            "#text": "#9D9D9D",
+                            "@_x:Key": "SystemFillColorSolidNeutral"
+                        },
+                        {
+                            "#text": "#08FFFFFF",
+                            "@_x:Key": "SystemFillColorAttentionBackground"
+                        },
+                        {
+                            "#text": "#393D1B",
+                            "@_x:Key": "SystemFillColorSuccessBackground"
+                        },
+                        {
+                            "#text": "#433519",
+                            "@_x:Key": "SystemFillColorCautionBackground"
+                        },
+                        {
+                            "#text": "#442726",
+                            "@_x:Key": "SystemFillColorCriticalBackground"
+                        },
+                        {
+                            "#text": "#08FFFFFF",
+                            "@_x:Key": "SystemFillColorNeutralBackground"
+                        },
+                        {
+                            "#text": "#2E2E2E",
+                            "@_x:Key": "SystemFillColorSolidAttentionBackground"
+                        },
+                        {
+                            "#text": "#2E2E2E",
+                            "@_x:Key": "SystemFillColorSolidNeutralBackground"
+                        }
+                    ],
+                    "SolidColorBrush": [
+                        {
+                            "@_x:Key": "TextFillColorPrimaryBrush",
+                            "@_Color": "{StaticResource TextFillColorPrimary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource TextFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource TextFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorDisabledBrush",
+                            "@_Color": "{StaticResource TextFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorInverseBrush",
+                            "@_Color": "{StaticResource TextFillColorInverse}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorPrimaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight3}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight3}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight2}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorDisabledBrush",
+                            "@_Color": "{StaticResource AccentTextFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSelectedTextBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorSelectedText}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorPrimaryBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorPrimary}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorDisabledBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTransparentBrush",
+                            "@_Color": "{StaticResource ControlFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorInputActiveBrush",
+                            "@_Color": "{StaticResource ControlFillColorInputActive}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrongFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrongFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlSolidFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlSolidFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTransparentBrush",
+                            "@_Color": "{StaticResource SubtleFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource SubtleFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource SubtleFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorDisabledBrush",
+                            "@_Color": "{StaticResource SubtleFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTransparentBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorQuarternaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorQuarternary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSelectedTextBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemAccentColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight2}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight2}",
+                            "@_Opacity": 0.9
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight2}",
+                            "@_Opacity": 0.8
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDisabledBrush",
+                            "@_Color": "{StaticResource AccentFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImageBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorForStrongFillWhenOnImage}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource CardStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultSolidBrush",
+                            "@_Color": "{StaticResource CardStrokeColorDefaultSolid}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrongStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrongStrokeColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorFlyoutBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorFlyout}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorInverseBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorInverse}"
+                        },
+                        {
+                            "@_x:Key": "DividerStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource DividerStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorOuterBrush",
+                            "@_Color": "{StaticResource FocusStrokeColorOuter}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorInnerBrush",
+                            "@_Color": "{StaticResource FocusStrokeColorInner}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorDefaultBrush",
+                            "@_Color": "{StaticResource CardBackgroundFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource CardBackgroundFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SmokeFillColorDefaultBrush",
+                            "@_Color": "{StaticResource SmokeFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorAltBrush",
+                            "@_Color": "{StaticResource LayerFillColorAlt}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAcrylicFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnAcrylicFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnAccentAcrylicFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparentBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorBase}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorQuarternaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorQuarternary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseAltBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorBaseAlt}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorLight2}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBrush",
+                            "@_Color": "{StaticResource SystemFillColorSuccess}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBrush",
+                            "@_Color": "{StaticResource SystemFillColorCaution}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBrush",
+                            "@_Color": "{StaticResource SystemFillColorCritical}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBrush",
+                            "@_Color": "{StaticResource SystemFillColorNeutral}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidNeutral}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorAttentionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSuccessBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorCautionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorCriticalBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorNeutralBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidAttentionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidAttentionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidNeutralBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonFaceColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHotlightColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorGrayTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        }
+                    ],
+                    "LinearGradientBrush": [
+                        {
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.33,
+                                        "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                                    },
+                                    {
+                                        "@_Offset": 1,
+                                        "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "ControlElevationBorderBrush",
+                            "@_MappingMode": "Absolute",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,3"
+                        },
+                        {
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.7,
+                                        "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                                    },
+                                    {
+                                        "@_Offset": 0.5,
+                                        "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "CircleElevationBorderBrush",
+                            "@_MappingMode": "RelativeToBoundingBox",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,1"
+                        },
+                        {
+                            "LinearGradientBrush.RelativeTransform": {
+                                "ScaleTransform": {
+                                    "@_ScaleY": -1,
+                                    "@_CenterY": 0.5
+                                }
+                            },
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.33,
+                                        "@_Color": "{StaticResource ControlStrokeColorOnAccentSecondary}"
+                                    },
+                                    {
+                                        "@_Offset": 1,
+                                        "@_Color": "{StaticResource ControlStrokeColorOnAccentDefault}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "AccentControlElevationBorderBrush",
+                            "@_MappingMode": "Absolute",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,3"
+                        }
+                    ],
+                    "@_x:Key": "Default"
+                },
+                {
+                    "Color": [
+                        {
+                            "#text": "#E4000000",
+                            "@_x:Key": "TextFillColorPrimary"
+                        },
+                        {
+                            "#text": "#9E000000",
+                            "@_x:Key": "TextFillColorSecondary"
+                        },
+                        {
+                            "#text": "#72000000",
+                            "@_x:Key": "TextFillColorTertiary"
+                        },
+                        {
+                            "#text": "#5C000000",
+                            "@_x:Key": "TextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextFillColorInverse"
+                        },
+                        {
+                            "#text": "#5C000000",
+                            "@_x:Key": "AccentTextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorSelectedText"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorPrimary"
+                        },
+                        {
+                            "#text": "#B3FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "TextOnAccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#B3FFFFFF",
+                            "@_x:Key": "ControlFillColorDefault"
+                        },
+                        {
+                            "#text": "#80F9F9F9",
+                            "@_x:Key": "ControlFillColorSecondary"
+                        },
+                        {
+                            "#text": "#4DF9F9F9",
+                            "@_x:Key": "ControlFillColorTertiary"
+                        },
+                        {
+                            "#text": "#4DF9F9F9",
+                            "@_x:Key": "ControlFillColorDisabled"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "ControlFillColorInputActive"
+                        },
+                        {
+                            "#text": "#72000000",
+                            "@_x:Key": "ControlStrongFillColorDefault"
+                        },
+                        {
+                            "#text": "#51000000",
+                            "@_x:Key": "ControlStrongFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "ControlSolidFillColorDefault"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "SubtleFillColorTransparent"
+                        },
+                        {
+                            "#text": "#09000000",
+                            "@_x:Key": "SubtleFillColorSecondary"
+                        },
+                        {
+                            "#text": "#06000000",
+                            "@_x:Key": "SubtleFillColorTertiary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "SubtleFillColorDisabled"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#06000000",
+                            "@_x:Key": "ControlAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "ControlAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#18000000",
+                            "@_x:Key": "ControlAltFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlAltFillColorDisabled"
+                        },
+                        {
+                            "#text": "#C9FFFFFF",
+                            "@_x:Key": "ControlOnImageFillColorDefault"
+                        },
+                        {
+                            "#text": "#F3F3F3",
+                            "@_x:Key": "ControlOnImageFillColorSecondary"
+                        },
+                        {
+                            "#text": "#EBEBEB",
+                            "@_x:Key": "ControlOnImageFillColorTertiary"
+                        },
+                        {
+                            "#text": "#00FFFFFF",
+                            "@_x:Key": "ControlOnImageFillColorDisabled"
+                        },
+                        {
+                            "#text": "#37000000",
+                            "@_x:Key": "AccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "ControlStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#29000000",
+                            "@_x:Key": "ControlStrokeColorSecondary"
+                        },
+                        {
+                            "#text": "#14FFFFFF",
+                            "@_x:Key": "ControlStrokeColorOnAccentDefault"
+                        },
+                        {
+                            "#text": "#66000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondary"
+                        },
+                        {
+                            "#text": "#37000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiary"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabled"
+                        },
+                        {
+                            "#text": "#59FFFFFF",
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImage"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "CardStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#EBEBEB",
+                            "@_x:Key": "CardStrokeColorDefaultSolid"
+                        },
+                        {
+                            "#text": "#72000000",
+                            "@_x:Key": "ControlStrongStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#37000000",
+                            "@_x:Key": "ControlStrongStrokeColorDisabled"
+                        },
+                        {
+                            "#text": "#66757575",
+                            "@_x:Key": "SurfaceStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "SurfaceStrokeColorFlyout"
+                        },
+                        {
+                            "#text": "#15FFFFFF",
+                            "@_x:Key": "SurfaceStrokeColorInverse"
+                        },
+                        {
+                            "#text": "#0F000000",
+                            "@_x:Key": "DividerStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#E4000000",
+                            "@_x:Key": "FocusStrokeColorOuter"
+                        },
+                        {
+                            "#text": "#B3FFFFFF",
+                            "@_x:Key": "FocusStrokeColorInner"
+                        },
+                        {
+                            "#text": "#B3FFFFFF",
+                            "@_x:Key": "CardBackgroundFillColorDefault"
+                        },
+                        {
+                            "#text": "#80F6F6F6",
+                            "@_x:Key": "CardBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#4D000000",
+                            "@_x:Key": "SmokeFillColorDefault"
+                        },
+                        {
+                            "#text": "#80FFFFFF",
+                            "@_x:Key": "LayerFillColorDefault"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "LayerFillColorAlt"
+                        },
+                        {
+                            "#text": "#40FFFFFF",
+                            "@_x:Key": "LayerOnAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#40FFFFFF",
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#B3FFFFFF",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefault"
+                        },
+                        {
+                            "#text": "#0A000000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#F9F9F9",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#00000000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#F3F3F3",
+                            "@_x:Key": "SolidBackgroundFillColorBase"
+                        },
+                        {
+                            "#text": "#EEEEEE",
+                            "@_x:Key": "SolidBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#F9F9F9",
+                            "@_x:Key": "SolidBackgroundFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FFFFFF",
+                            "@_x:Key": "SolidBackgroundFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#00F3F3F3",
+                            "@_x:Key": "SolidBackgroundFillColorTransparent"
+                        },
+                        {
+                            "#text": "#DADADA",
+                            "@_x:Key": "SolidBackgroundFillColorBaseAlt"
+                        },
+                        {
+                            "#text": "#0F7B0F",
+                            "@_x:Key": "SystemFillColorSuccess"
+                        },
+                        {
+                            "#text": "#9D5D00",
+                            "@_x:Key": "SystemFillColorCaution"
+                        },
+                        {
+                            "#text": "#C42B1C",
+                            "@_x:Key": "SystemFillColorCritical"
+                        },
+                        {
+                            "#text": "#72000000",
+                            "@_x:Key": "SystemFillColorNeutral"
+                        },
+                        {
+                            "#text": "#8A8A8A",
+                            "@_x:Key": "SystemFillColorSolidNeutral"
+                        },
+                        {
+                            "#text": "#80F6F6F6",
+                            "@_x:Key": "SystemFillColorAttentionBackground"
+                        },
+                        {
+                            "#text": "#DFF6DD",
+                            "@_x:Key": "SystemFillColorSuccessBackground"
+                        },
+                        {
+                            "#text": "#FFF4CE",
+                            "@_x:Key": "SystemFillColorCautionBackground"
+                        },
+                        {
+                            "#text": "#FDE7E9",
+                            "@_x:Key": "SystemFillColorCriticalBackground"
+                        },
+                        {
+                            "#text": "#06000000",
+                            "@_x:Key": "SystemFillColorNeutralBackground"
+                        },
+                        {
+                            "#text": "#F7F7F7",
+                            "@_x:Key": "SystemFillColorSolidAttentionBackground"
+                        },
+                        {
+                            "#text": "#F3F3F3",
+                            "@_x:Key": "SystemFillColorSolidNeutralBackground"
+                        }
+                    ],
+                    "SolidColorBrush": [
+                        {
+                            "@_x:Key": "TextFillColorPrimaryBrush",
+                            "@_Color": "{StaticResource TextFillColorPrimary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource TextFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource TextFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorDisabledBrush",
+                            "@_Color": "{StaticResource TextFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorInverseBrush",
+                            "@_Color": "{StaticResource TextFillColorInverse}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorPrimaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark2}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark3}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark1}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorDisabledBrush",
+                            "@_Color": "{StaticResource AccentTextFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSelectedTextBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorSelectedText}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorPrimaryBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorPrimary}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorDisabledBrush",
+                            "@_Color": "{StaticResource TextOnAccentFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTransparentBrush",
+                            "@_Color": "{StaticResource ControlFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorInputActiveBrush",
+                            "@_Color": "{StaticResource ControlFillColorInputActive}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrongFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrongFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlSolidFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlSolidFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTransparentBrush",
+                            "@_Color": "{StaticResource SubtleFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource SubtleFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource SubtleFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorDisabledBrush",
+                            "@_Color": "{StaticResource SubtleFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTransparentBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorQuarternaryBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorQuarternary}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlAltFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlOnImageFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSelectedTextBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemAccentColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark1}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark1}",
+                            "@_Opacity": 0.9
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemAccentColorDark1}",
+                            "@_Opacity": 0.8
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDisabledBrush",
+                            "@_Color": "{StaticResource AccentFillColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorSecondaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentSecondary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiaryBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentTertiary}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorOnAccentDisabled}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImageBrush",
+                            "@_Color": "{StaticResource ControlStrokeColorForStrongFillWhenOnImage}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource CardStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultSolidBrush",
+                            "@_Color": "{StaticResource CardStrokeColorDefaultSolid}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource ControlStrongStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDisabledBrush",
+                            "@_Color": "{StaticResource ControlStrongStrokeColorDisabled}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorFlyoutBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorFlyout}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorInverseBrush",
+                            "@_Color": "{StaticResource SurfaceStrokeColorInverse}"
+                        },
+                        {
+                            "@_x:Key": "DividerStrokeColorDefaultBrush",
+                            "@_Color": "{StaticResource DividerStrokeColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorOuterBrush",
+                            "@_Color": "{StaticResource FocusStrokeColorOuter}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorInnerBrush",
+                            "@_Color": "{StaticResource FocusStrokeColorInner}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorDefaultBrush",
+                            "@_Color": "{StaticResource CardBackgroundFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource CardBackgroundFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SmokeFillColorDefaultBrush",
+                            "@_Color": "{StaticResource SmokeFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorAltBrush",
+                            "@_Color": "{StaticResource LayerFillColorAlt}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAcrylicFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnAcrylicFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnAccentAcrylicFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefaultBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorDefault}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparentBrush",
+                            "@_Color": "{StaticResource LayerOnMicaBaseAltFillColorTransparent}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorBase}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorSecondary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorTertiaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorTertiary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorQuarternaryBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorQuarternary}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseAltBrush",
+                            "@_Color": "{StaticResource SolidBackgroundFillColorBaseAlt}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBrush",
+                            "@_Color": "{ThemeResource SystemAccentColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBrush",
+                            "@_Color": "{StaticResource SystemFillColorSuccess}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBrush",
+                            "@_Color": "{StaticResource SystemFillColorCaution}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBrush",
+                            "@_Color": "{StaticResource SystemFillColorCritical}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBrush",
+                            "@_Color": "{StaticResource SystemFillColorNeutral}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidNeutral}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorAttentionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSuccessBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorCautionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorCriticalBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorNeutralBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidAttentionBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidAttentionBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBackgroundBrush",
+                            "@_Color": "{StaticResource SystemFillColorSolidNeutralBackground}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonFaceColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHotlightColorBrush",
+                            "@_Color": "#FF00FF"
+                        },
+                        {
+                            "@_x:Key": "SystemColorGrayTextColorBrush",
+                            "@_Color": "#FF00FF"
+                        }
+                    ],
+                    "LinearGradientBrush": [
+                        {
+                            "LinearGradientBrush.RelativeTransform": {
+                                "ScaleTransform": {
+                                    "@_ScaleY": -1,
+                                    "@_CenterY": 0.5
+                                }
+                            },
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.33,
+                                        "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                                    },
+                                    {
+                                        "@_Offset": 1,
+                                        "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "ControlElevationBorderBrush",
+                            "@_MappingMode": "Absolute",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,3"
+                        },
+                        {
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.5,
+                                        "@_Color": "{StaticResource ControlStrokeColorDefault}"
+                                    },
+                                    {
+                                        "@_Offset": 0.7,
+                                        "@_Color": "{StaticResource ControlStrokeColorSecondary}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "CircleElevationBorderBrush",
+                            "@_MappingMode": "RelativeToBoundingBox",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,1"
+                        },
+                        {
+                            "LinearGradientBrush.RelativeTransform": {
+                                "ScaleTransform": {
+                                    "@_ScaleY": -1,
+                                    "@_CenterY": 0.5
+                                }
+                            },
+                            "LinearGradientBrush.GradientStops": {
+                                "GradientStop": [
+                                    {
+                                        "@_Offset": 0.33,
+                                        "@_Color": "{StaticResource ControlStrokeColorOnAccentSecondary}"
+                                    },
+                                    {
+                                        "@_Offset": 1,
+                                        "@_Color": "{StaticResource ControlStrokeColorOnAccentDefault}"
+                                    }
+                                ]
+                            },
+                            "@_x:Key": "AccentControlElevationBorderBrush",
+                            "@_MappingMode": "Absolute",
+                            "@_StartPoint": "0,0",
+                            "@_EndPoint": "0,3"
+                        }
+                    ],
+                    "@_x:Key": "Light"
+                },
+                {
+                    "SolidColorBrush": [
+                        {
+                            "@_x:Key": "TextFillColorPrimaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorGrayTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextFillColorInverseBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorPrimaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentTextFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorGrayTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSelectedTextBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorPrimaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "TextOnAccentFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorGrayTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorTransparentBrush",
+                            "@_Color": "Transparent"
+                        },
+                        {
+                            "@_x:Key": "ControlFillColorInputActiveBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlSolidFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTransparentBrush",
+                            "@_Color": "Transparent"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "SubtleFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTransparentBrush",
+                            "@_Color": "Transparent"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorQuarternaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlAltFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlOnImageFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSelectedTextBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentFillColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorGrayTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImageBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "CardStrokeColorDefaultSolidBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlStrongStrokeColorDisabledBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorFlyoutBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SurfaceStrokeColorInverseBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "DividerStrokeColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorOuterBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "FocusStrokeColorInnerBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "CardBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SmokeFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerFillColorAltBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAcrylicFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefaultBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparentBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorSecondaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorTertiaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorQuarternaryBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SolidBackgroundFillColorBaseAltBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorAttentionBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSuccessBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCautionBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorCriticalBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorNeutralBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidAttentionBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemFillColorSolidNeutralBackgroundBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "ControlElevationBorderBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "CircleElevationBorderBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "AccentControlElevationBorderBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowTextColorBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorWindowColorBrush",
+                            "@_Color": "{ThemeResource SystemColorWindowColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonFaceColorBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonFaceColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorButtonTextColorBrush",
+                            "@_Color": "{ThemeResource SystemColorButtonTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightColorBrush",
+                            "@_Color": "{ThemeResource SystemColorHighlightColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHighlightTextColorBrush",
+                            "@_Color": "{ThemeResource SystemColorHighlightTextColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorHotlightColorBrush",
+                            "@_Color": "{ThemeResource SystemColorHotlightColor}"
+                        },
+                        {
+                            "@_x:Key": "SystemColorGrayTextColorBrush",
+                            "@_Color": "{ThemeResource SystemColorGrayTextColor}"
+                        }
+                    ],
+                    "Color": [
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextFillColorPrimary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextFillColorInverse"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "AccentTextFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlFillColorInputActive"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlSolidFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SubtleFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SubtleFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SubtleFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SubtleFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlAltFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlAltFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlOnImageFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlOnImageFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlOnImageFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlOnImageFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorOnAccentDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorOnAccentSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorOnAccentTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorOnAccentDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "CardStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "CardStrokeColorDefaultSolid"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SurfaceStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SurfaceStrokeColorFlyout"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SurfaceStrokeColorInverse"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "DividerStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "FocusStrokeColorOuter"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "FocusStrokeColorInner"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "CardBackgroundFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "CardBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SmokeFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerFillColorAlt"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnAccentAcrylicFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "LayerOnMicaBaseAltFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorBase"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorTertiary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorQuarternary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorTransparent"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SolidBackgroundFillColorBaseAlt"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorSuccess"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorCaution"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorCritical"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorNeutral"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorSolidNeutral"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorAttentionBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorSuccessBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorCautionBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorCriticalBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorNeutralBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorSolidAttentionBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "SystemFillColorSolidNeutralBackground"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextOnAccentFillColorSelectedText"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextOnAccentFillColorPrimary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextOnAccentFillColorSecondary"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "TextOnAccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrongFillColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrongFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "AccentFillColorDisabled"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrokeColorForStrongFillWhenOnImage"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrongStrokeColorDefault"
+                        },
+                        {
+                            "#text": "#FF0000",
+                            "@_x:Key": "ControlStrongStrokeColorDisabled"
+                        }
+                    ],
+                    "@_x:Key": "HighContrast"
+                }
+            ]
+        },
+        "x:String": [
+            {
+                "#text": "0,0,0,1",
+                "@_x:Key": "ControlFastOutSlowInKeySpline"
+            },
+            {
+                "#text": "00:00:00.250",
+                "@_x:Key": "ControlNormalAnimationDuration"
+            },
+            {
+                "#text": "00:00:00.167",
+                "@_x:Key": "ControlFastAnimationDuration"
+            },
+            {
+                "#text": "00:00:00.168",
+                "@_x:Key": "ControlFastAnimationAfterDuration"
+            },
+            {
+                "#text": "00:00:00.083",
+                "@_x:Key": "ControlFasterAnimationDuration"
+            }
+        ],
+        "@_xmlns:x": "http://schemas.microsoft.com/winfx/2006/xaml",
+        "@_xmlns": "http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    }
+}
