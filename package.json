@@ -4,11 +4,12 @@
     "dev": "concurrently -n \"Library,Playground\" \"pnpm --filter vue-fluent-ui dev\" \"pnpm --filter playground dev\"",
     "create-component": "node scripts/create-component/create-component.js"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.14.0",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "chalk": "^5.4.1",
     "concurrently": "^9.2.0",
+    "fast-xml-parser": "^5.2.5",
     "inquirer": "^12.9.0",
     "ora": "^8.2.0"
   }
