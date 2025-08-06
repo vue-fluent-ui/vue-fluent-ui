@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 interface theme {
     // TextFillColorPrimary
     TextFillColorPrimary: "#FFFFFF"

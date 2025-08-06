@@ -9,11 +9,11 @@ interface theme {
     TextFillColorDisabledBrush: string
     // TextFillColorInverseBrush:{StaticResource TextFillColorInverse}
     TextFillColorInverseBrush: string
-    // AccentTextFillColorPrimaryBrush:{ThemeResource SystemAccentColorDark2}
+    // AccentTextFillColorPrimaryBrush:{ThemeResource SystemAccentColorLight3}
     AccentTextFillColorPrimaryBrush: string
-    // AccentTextFillColorSecondaryBrush:{ThemeResource SystemAccentColorDark3}
+    // AccentTextFillColorSecondaryBrush:{ThemeResource SystemAccentColorLight3}
     AccentTextFillColorSecondaryBrush: string
-    // AccentTextFillColorTertiaryBrush:{ThemeResource SystemAccentColorDark1}
+    // AccentTextFillColorTertiaryBrush:{ThemeResource SystemAccentColorLight2}
     AccentTextFillColorTertiaryBrush: string
     // AccentTextFillColorDisabledBrush:{StaticResource AccentTextFillColorDisabled}
     AccentTextFillColorDisabledBrush: string
@@ -71,11 +71,11 @@ interface theme {
     ControlOnImageFillColorDisabledBrush: string
     // AccentFillColorSelectedTextBackgroundBrush:{ThemeResource SystemAccentColor}
     AccentFillColorSelectedTextBackgroundBrush: string
-    // AccentFillColorDefaultBrush:{ThemeResource SystemAccentColorDark1}
+    // AccentFillColorDefaultBrush:{ThemeResource SystemAccentColorLight2}
     AccentFillColorDefaultBrush: string
-    // AccentFillColorSecondaryBrush:{ThemeResource SystemAccentColorDark1}
+    // AccentFillColorSecondaryBrush:{ThemeResource SystemAccentColorLight2}
     AccentFillColorSecondaryBrush: string
-    // AccentFillColorTertiaryBrush:{ThemeResource SystemAccentColorDark1}
+    // AccentFillColorTertiaryBrush:{ThemeResource SystemAccentColorLight2}
     AccentFillColorTertiaryBrush: string
     // AccentFillColorDisabledBrush:{StaticResource AccentFillColorDisabled}
     AccentFillColorDisabledBrush: string
@@ -145,7 +145,7 @@ interface theme {
     SolidBackgroundFillColorQuarternaryBrush: string
     // SolidBackgroundFillColorBaseAltBrush:{StaticResource SolidBackgroundFillColorBaseAlt}
     SolidBackgroundFillColorBaseAltBrush: string
-    // SystemFillColorAttentionBrush:{ThemeResource SystemAccentColor}
+    // SystemFillColorAttentionBrush:{ThemeResource SystemAccentColorLight2}
     SystemFillColorAttentionBrush: string
     // SystemFillColorSuccessBrush:{StaticResource SystemFillColorSuccess}
     SystemFillColorSuccessBrush: string

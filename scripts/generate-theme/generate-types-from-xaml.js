@@ -34,7 +34,7 @@ fs.writeFileSync("./output/themeresources.json", json_str, {
 // color light的处理
 
 // noinspection JSUnresolvedReference
-const theme_light = parsedXML.ResourceDictionary["ResourceDictionary.ThemeDictionaries"].ResourceDictionary[0].SolidColorBrush;
+const theme_light = parsedXML.ResourceDictionary["ResourceDictionary.ThemeDictionaries"].ResourceDictionary[2].SolidColorBrush;
 let light_theme = "";
 for (const val of theme_light) {
     const key = val["@_x:Key"];
@@ -43,7 +43,7 @@ for (const val of theme_light) {
 
 }
 const light_theme_str = `interface theme {\n${light_theme}\n}`;
-fs.writeFileSync("./output/light.theme.demo.ts", light_theme_str, {
+fs.writeFileSync("./output/HighContrast.theme.demo.ts", light_theme_str, {
     encoding: "utf8",
 });
 
