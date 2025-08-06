@@ -37,10 +37,10 @@ fs.writeFileSync("./output/themeresources.json", json_str, {
 const theme_light = parsedXML.ResourceDictionary["ResourceDictionary.ThemeDictionaries"].ResourceDictionary[0].SolidColorBrush;
 let light_theme = "";
 for (const val of theme_light) {
-    const key = val["@_x:Key"]
-    const color = val["@_Color"]
-    console.log(key,color)
-    // todo 看起来不是很能考虑color的样子，还是得考虑转换brush成类型定义，具体解释看看ob笔记
+    const key = val["@_x:Key"];
+    const color = val["@_Color"];
+    light_theme += `    // ${key}:${color}\n    ${key}:string\n`;
+
 }
 const light_theme_str = `interface theme {\n${light_theme}\n}`;
 fs.writeFileSync("./output/light.theme.demo.ts", light_theme_str, {

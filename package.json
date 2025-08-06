@@ -3,7 +3,7 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently -n \"Library,Playground\" \"pnpm --filter vue-fluent-ui dev\" \"pnpm --filter playground dev\"",
-    "create-component": "node scripts/create-component/create-component.js"
+    "create-component": "node scripts/create-component/create-component.cjs"
   },
   "packageManager": "pnpm@10.14.0",
   "devDependencies": {
