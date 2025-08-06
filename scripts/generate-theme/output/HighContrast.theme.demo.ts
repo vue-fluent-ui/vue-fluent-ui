@@ -1,3 +1,5 @@
+// noinspection JSUnusedGlobalSymbols
+
 interface theme {
     // TextFillColorPrimaryBrush:{ThemeResource SystemColorWindowTextColor}
     TextFillColorPrimaryBrush: string
