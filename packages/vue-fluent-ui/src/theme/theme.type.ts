@@ -64,23 +64,23 @@ export interface ThemeColor {
         solidBackgroundBaseAlt: string
     }
     stroke: {
-        ControlDefault: string
-        ControlSecondary: string
-        ControlOnAccentDefault: string
-        ControlOnAccentSecondary: string
-        ControlOnAccentTertiary: string
-        ControlOnAccentDisabled: string
-        ControlForStrongFillWhenOnImage: string
-        CardDefault: string
-        CardDefaultSolid: string
-        ControlStrongDefault: string
-        ControlStrongDisabled: string
-        SurfaceDefault: string
-        SurfaceFlyout: string
-        SurfaceInverse: string
-        DividerDefault: string
-        FocusOuter: string
-        FocusInner: string
+        controlDefault: string
+        controlSecondary: string
+        controlOnAccentDefault: string
+        controlOnAccentSecondary: string
+        controlOnAccentTertiary: string
+        controlOnAccentDisabled: string
+        controlForStrongFillWhenOnImage: string
+        cardDefault: string
+        cardDefaultSolid: string
+        controlStrongDefault: string
+        controlStrongDisabled: string
+        surfaceDefault: string
+        surfaceFlyout: string
+        surfaceInverse: string
+        dividerDefault: string
+        focusOuter: string
+        focusInner: string
     }
     system: {
         attention: string
