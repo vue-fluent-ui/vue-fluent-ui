@@ -4,19 +4,19 @@
 
 export interface ThemeColor {
     text: {
-        TextFillColorPrimary: string
-        TextFillColorSecondary: string
-        TextFillColorTertiary: string
-        TextFillColorDisabled: string
-        TextFillColorInverse: string
-        AccentTextFillColorPrimary: string
-        AccentTextFillColorSecondary: string
-        AccentTextFillColorTertiary: string
-        AccentTextFillColorDisabled: string
-        TextOnAccentFillColorSelectedText: string
-        TextOnAccentFillColorPrimary: string
-        TextOnAccentFillColorSecondary: string
-        TextOnAccentFillColorDisabled: string
+        primary: string
+        secondary: string
+        tertiary: string
+        disabled: string
+        inverse: string
+        accentPrimary: string
+        accentSecondary: string
+        accentTertiary: string
+        accentDisabled: string
+        onAccentFillColorSelectedText: string
+        onAccentFillColorPrimary: string
+        onAccentFillColorSecondary: string
+        onAccentFillColorDisabled: string
     },
 
     ControlFillColorDefault: string
@@ -80,19 +80,20 @@ export interface ThemeColor {
     SolidBackgroundFillColorQuarternary: string
     SolidBackgroundFillColorBaseAlt: string
     system: {
-        FillColorAttention: string
-        FillColorSuccess: string
-        FillColorCaution: string
-        FillColorCritical: string
-        FillColorNeutral: string
-        FillColorSolidNeutral: string
-        FillColorAttentionBackground: string
-        FillColorSuccessBackground: string
-        FillColorCautionBackground: string
-        FillColorCriticalBackground: string
-        FillColorNeutralBackground: string
-        FillColorSolidAttentionBackground: string
-        FillColorSolidNeutralBackground: string
+        attention: string
+        success: string
+        caution: string
+        critical: string
+        neutral: string
+        solidNeutral: string
+        attentionBackground: string
+        successBackground: string
+        cautionBackground: string
+        criticalBackground: string
+        neutralBackground: string
+        solidAttentionBackground: string
+        solidNeutralBackground: string
+        // 这是干什么的？归类也在这边吗？
         ColorWindowTextColor: string
         ColorWindowColor: string
         ColorButtonFaceColor: string
