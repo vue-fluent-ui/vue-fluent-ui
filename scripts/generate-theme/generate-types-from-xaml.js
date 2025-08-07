@@ -38,7 +38,7 @@ const theme_light = parsedXML.ResourceDictionary["ResourceDictionary.ThemeDictio
 let light_theme = "";
 for (const val of theme_light) {
     const key = val["@_x:Key"];
-    const color = val["@_Color"];
+    //const color = val["@_Color"];
     light_theme += `    ${key}:string\n`;
 
 }
