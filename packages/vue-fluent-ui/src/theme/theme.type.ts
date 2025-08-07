@@ -96,14 +96,18 @@ export interface ThemeColor {
         neutralBackground: string
         solidAttentionBackground: string
         solidNeutralBackground: string
-        // 这是干什么的？归类也在这边吗？
-        ColorWindowTextColor: string
-        ColorWindowColor: string
-        ColorButtonFaceColor: string
-        ColorButtonTextColor: string
-        ColorHighlightColor: string
-        ColorHighlightTextColor: string
-        ColorHotlightColor: string
-        ColorGrayTextColor: string
+    },
+    highContrast: {
+        systemColorWindowTextColor: string
+        systemColorWindowColor: string
+        systemColorButtonFaceColor: string
+        systemColorButtonTextColor: string
+        systemColorHighlightColor: string
+        systemColorHighlightTextColor: string
+        systemColorHotlightColor: string
+        systemColorGrayTextColor: string
+        ControlElevationBorder: string
+        CircleElevationBorder: string
+        AccentControlElevationBorder: string
     }
 }
