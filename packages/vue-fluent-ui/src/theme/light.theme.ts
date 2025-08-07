@@ -1,6 +1,6 @@
-import type {ThemeColor} from "./theme.type.ts";
+import type {ThemeType} from "./theme.type.ts";
 
-export const getDefaultLightTheme = (): ThemeColor => {
+export const getDefaultLightTheme = (): ThemeType => {
     return {
         primary: '#000000cc'
     }

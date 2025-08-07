@@ -2,7 +2,8 @@
  * @fileOverview 主题的类型定义
  */
 
-export interface ThemeColor {
+
+export interface ThemeType {
     text: {
         primary: string
         secondary: string
