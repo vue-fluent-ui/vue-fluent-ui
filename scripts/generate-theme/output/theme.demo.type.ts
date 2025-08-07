@@ -1,20 +1,19 @@
-interface theme {
-    text: {
-        TextFillColorPrimaryBrush: string
-        TextFillColorSecondaryBrush: string
-        TextFillColorTertiaryBrush: string
-        TextFillColorDisabledBrush: string
-        TextFillColorInverseBrush: string
-        AccentTextFillColorPrimaryBrush: string
-        AccentTextFillColorSecondaryBrush: string
-        AccentTextFillColorTertiaryBrush: string
-        AccentTextFillColorDisabledBrush: string
-        TextOnAccentFillColorSelectedTextBrush: string
-        TextOnAccentFillColorPrimaryBrush: string
-        TextOnAccentFillColorSecondaryBrush: string
-        TextOnAccentFillColorDisabledBrush: string
-    },
+// noinspection JSUnusedGlobalSymbols
 
+interface theme {
+    TextFillColorPrimaryBrush: string
+    TextFillColorSecondaryBrush: string
+    TextFillColorTertiaryBrush: string
+    TextFillColorDisabledBrush: string
+    TextFillColorInverseBrush: string
+    AccentTextFillColorPrimaryBrush: string
+    AccentTextFillColorSecondaryBrush: string
+    AccentTextFillColorTertiaryBrush: string
+    AccentTextFillColorDisabledBrush: string
+    TextOnAccentFillColorSelectedTextBrush: string
+    TextOnAccentFillColorPrimaryBrush: string
+    TextOnAccentFillColorSecondaryBrush: string
+    TextOnAccentFillColorDisabledBrush: string
     ControlFillColorDefaultBrush: string
     ControlFillColorSecondaryBrush: string
     ControlFillColorTertiaryBrush: string
