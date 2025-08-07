@@ -1,97 +1,100 @@
 interface theme {
-    TextFillColorPrimaryBrush:string
-    TextFillColorSecondaryBrush:string
-    TextFillColorTertiaryBrush:string
-    TextFillColorDisabledBrush:string
-    TextFillColorInverseBrush:string
-    AccentTextFillColorPrimaryBrush:string
-    AccentTextFillColorSecondaryBrush:string
-    AccentTextFillColorTertiaryBrush:string
-    AccentTextFillColorDisabledBrush:string
-    TextOnAccentFillColorSelectedTextBrush:string
-    TextOnAccentFillColorPrimaryBrush:string
-    TextOnAccentFillColorSecondaryBrush:string
-    TextOnAccentFillColorDisabledBrush:string
-    ControlFillColorDefaultBrush:string
-    ControlFillColorSecondaryBrush:string
-    ControlFillColorTertiaryBrush:string
-    ControlFillColorDisabledBrush:string
-    ControlFillColorTransparentBrush:string
-    ControlFillColorInputActiveBrush:string
-    ControlStrongFillColorDefaultBrush:string
-    ControlStrongFillColorDisabledBrush:string
-    ControlSolidFillColorDefaultBrush:string
-    SubtleFillColorTransparentBrush:string
-    SubtleFillColorSecondaryBrush:string
-    SubtleFillColorTertiaryBrush:string
-    SubtleFillColorDisabledBrush:string
-    ControlAltFillColorTransparentBrush:string
-    ControlAltFillColorSecondaryBrush:string
-    ControlAltFillColorTertiaryBrush:string
-    ControlAltFillColorQuarternaryBrush:string
-    ControlAltFillColorDisabledBrush:string
-    ControlOnImageFillColorDefaultBrush:string
-    ControlOnImageFillColorSecondaryBrush:string
-    ControlOnImageFillColorTertiaryBrush:string
-    ControlOnImageFillColorDisabledBrush:string
-    AccentFillColorSelectedTextBackgroundBrush:string
-    AccentFillColorDefaultBrush:string
-    AccentFillColorSecondaryBrush:string
-    AccentFillColorTertiaryBrush:string
-    AccentFillColorDisabledBrush:string
-    ControlStrokeColorDefaultBrush:string
-    ControlStrokeColorSecondaryBrush:string
-    ControlStrokeColorOnAccentDefaultBrush:string
-    ControlStrokeColorOnAccentSecondaryBrush:string
-    ControlStrokeColorOnAccentTertiaryBrush:string
-    ControlStrokeColorOnAccentDisabledBrush:string
-    ControlStrokeColorForStrongFillWhenOnImageBrush:string
-    CardStrokeColorDefaultBrush:string
-    CardStrokeColorDefaultSolidBrush:string
-    ControlStrongStrokeColorDefaultBrush:string
-    ControlStrongStrokeColorDisabledBrush:string
-    SurfaceStrokeColorDefaultBrush:string
-    SurfaceStrokeColorFlyoutBrush:string
-    SurfaceStrokeColorInverseBrush:string
-    DividerStrokeColorDefaultBrush:string
-    FocusStrokeColorOuterBrush:string
-    FocusStrokeColorInnerBrush:string
-    CardBackgroundFillColorDefaultBrush:string
-    CardBackgroundFillColorSecondaryBrush:string
-    SmokeFillColorDefaultBrush:string
-    LayerFillColorDefaultBrush:string
-    LayerFillColorAltBrush:string
-    LayerOnAcrylicFillColorDefaultBrush:string
-    LayerOnAccentAcrylicFillColorDefaultBrush:string
-    LayerOnMicaBaseAltFillColorDefaultBrush:string
-    LayerOnMicaBaseAltFillColorSecondaryBrush:string
-    LayerOnMicaBaseAltFillColorTertiaryBrush:string
-    LayerOnMicaBaseAltFillColorTransparentBrush:string
-    SolidBackgroundFillColorBaseBrush:string
-    SolidBackgroundFillColorSecondaryBrush:string
-    SolidBackgroundFillColorTertiaryBrush:string
-    SolidBackgroundFillColorQuarternaryBrush:string
-    SolidBackgroundFillColorBaseAltBrush:string
-    SystemFillColorAttentionBrush:string
-    SystemFillColorSuccessBrush:string
-    SystemFillColorCautionBrush:string
-    SystemFillColorCriticalBrush:string
-    SystemFillColorNeutralBrush:string
-    SystemFillColorSolidNeutralBrush:string
-    SystemFillColorAttentionBackgroundBrush:string
-    SystemFillColorSuccessBackgroundBrush:string
-    SystemFillColorCautionBackgroundBrush:string
-    SystemFillColorCriticalBackgroundBrush:string
-    SystemFillColorNeutralBackgroundBrush:string
-    SystemFillColorSolidAttentionBackgroundBrush:string
-    SystemFillColorSolidNeutralBackgroundBrush:string
-    SystemColorWindowTextColorBrush:string
-    SystemColorWindowColorBrush:string
-    SystemColorButtonFaceColorBrush:string
-    SystemColorButtonTextColorBrush:string
-    SystemColorHighlightColorBrush:string
-    SystemColorHighlightTextColorBrush:string
-    SystemColorHotlightColorBrush:string
-    SystemColorGrayTextColorBrush:string
+    text: {
+        TextFillColorPrimaryBrush: string
+        TextFillColorSecondaryBrush: string
+        TextFillColorTertiaryBrush: string
+        TextFillColorDisabledBrush: string
+        TextFillColorInverseBrush: string
+        AccentTextFillColorPrimaryBrush: string
+        AccentTextFillColorSecondaryBrush: string
+        AccentTextFillColorTertiaryBrush: string
+        AccentTextFillColorDisabledBrush: string
+        TextOnAccentFillColorSelectedTextBrush: string
+        TextOnAccentFillColorPrimaryBrush: string
+        TextOnAccentFillColorSecondaryBrush: string
+        TextOnAccentFillColorDisabledBrush: string
+    },
+
+    ControlFillColorDefaultBrush: string
+    ControlFillColorSecondaryBrush: string
+    ControlFillColorTertiaryBrush: string
+    ControlFillColorDisabledBrush: string
+    ControlFillColorTransparentBrush: string
+    ControlFillColorInputActiveBrush: string
+    ControlStrongFillColorDefaultBrush: string
+    ControlStrongFillColorDisabledBrush: string
+    ControlSolidFillColorDefaultBrush: string
+    SubtleFillColorTransparentBrush: string
+    SubtleFillColorSecondaryBrush: string
+    SubtleFillColorTertiaryBrush: string
+    SubtleFillColorDisabledBrush: string
+    ControlAltFillColorTransparentBrush: string
+    ControlAltFillColorSecondaryBrush: string
+    ControlAltFillColorTertiaryBrush: string
+    ControlAltFillColorQuarternaryBrush: string
+    ControlAltFillColorDisabledBrush: string
+    ControlOnImageFillColorDefaultBrush: string
+    ControlOnImageFillColorSecondaryBrush: string
+    ControlOnImageFillColorTertiaryBrush: string
+    ControlOnImageFillColorDisabledBrush: string
+    AccentFillColorSelectedTextBackgroundBrush: string
+    AccentFillColorDefaultBrush: string
+    AccentFillColorSecondaryBrush: string
+    AccentFillColorTertiaryBrush: string
+    AccentFillColorDisabledBrush: string
+    ControlStrokeColorDefaultBrush: string
+    ControlStrokeColorSecondaryBrush: string
+    ControlStrokeColorOnAccentDefaultBrush: string
+    ControlStrokeColorOnAccentSecondaryBrush: string
+    ControlStrokeColorOnAccentTertiaryBrush: string
+    ControlStrokeColorOnAccentDisabledBrush: string
+    ControlStrokeColorForStrongFillWhenOnImageBrush: string
+    CardStrokeColorDefaultBrush: string
+    CardStrokeColorDefaultSolidBrush: string
+    ControlStrongStrokeColorDefaultBrush: string
+    ControlStrongStrokeColorDisabledBrush: string
+    SurfaceStrokeColorDefaultBrush: string
+    SurfaceStrokeColorFlyoutBrush: string
+    SurfaceStrokeColorInverseBrush: string
+    DividerStrokeColorDefaultBrush: string
+    FocusStrokeColorOuterBrush: string
+    FocusStrokeColorInnerBrush: string
+    CardBackgroundFillColorDefaultBrush: string
+    CardBackgroundFillColorSecondaryBrush: string
+    SmokeFillColorDefaultBrush: string
+    LayerFillColorDefaultBrush: string
+    LayerFillColorAltBrush: string
+    LayerOnAcrylicFillColorDefaultBrush: string
+    LayerOnAccentAcrylicFillColorDefaultBrush: string
+    LayerOnMicaBaseAltFillColorDefaultBrush: string
+    LayerOnMicaBaseAltFillColorSecondaryBrush: string
+    LayerOnMicaBaseAltFillColorTertiaryBrush: string
+    LayerOnMicaBaseAltFillColorTransparentBrush: string
+    SolidBackgroundFillColorBaseBrush: string
+    SolidBackgroundFillColorSecondaryBrush: string
+    SolidBackgroundFillColorTertiaryBrush: string
+    SolidBackgroundFillColorQuarternaryBrush: string
+    SolidBackgroundFillColorBaseAltBrush: string
+    SystemFillColorAttentionBrush: string
+    SystemFillColorSuccessBrush: string
+    SystemFillColorCautionBrush: string
+    SystemFillColorCriticalBrush: string
+    SystemFillColorNeutralBrush: string
+    SystemFillColorSolidNeutralBrush: string
+    SystemFillColorAttentionBackgroundBrush: string
+    SystemFillColorSuccessBackgroundBrush: string
+    SystemFillColorCautionBackgroundBrush: string
+    SystemFillColorCriticalBackgroundBrush: string
+    SystemFillColorNeutralBackgroundBrush: string
+    SystemFillColorSolidAttentionBackgroundBrush: string
+    SystemFillColorSolidNeutralBackgroundBrush: string
+    SystemColorWindowTextColorBrush: string
+    SystemColorWindowColorBrush: string
+    SystemColorButtonFaceColorBrush: string
+    SystemColorButtonTextColorBrush: string
+    SystemColorHighlightColorBrush: string
+    SystemColorHighlightTextColorBrush: string
+    SystemColorHotlightColorBrush: string
+    SystemColorGrayTextColorBrush: string
 
 }
