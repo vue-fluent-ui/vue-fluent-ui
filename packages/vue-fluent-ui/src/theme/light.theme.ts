@@ -1,5 +1,10 @@
 import type {ThemeType} from "./theme.type.ts";
 
+/**
+ * 获取默认的浅色主题。
+ * @alpha
+ * @returns {ThemeType} - 返回一个包含浅色主题所有颜色定义的完整主题对象。
+ */
 export const getDefaultLightTheme = (): ThemeType => {
     return {
         text: {

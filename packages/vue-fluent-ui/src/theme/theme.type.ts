@@ -3,10 +3,20 @@
  */
 
 
+/**
+ * 表示主题画笔颜色的类型，格式为十六进制颜色字符串。
+ * @example '#FFFFFF'
+ */
 export type ThemeBrushColor = `#${string}`;
 
 
+/**
+ * 定义了 Fluent UI 主题的完整结构，包含了文本、填充、描边、系统和高对比度等方面的颜色定义。
+ */
 export interface ThemeType {
+    /**
+     * 文本颜色定义
+     */
     text: {
         primary: ThemeBrushColor
         secondary: ThemeBrushColor
@@ -22,6 +32,9 @@ export interface ThemeType {
         onAccentFillColorSecondary: ThemeBrushColor
         onAccentFillColorDisabled: ThemeBrushColor
     },
+    /**
+     * 填充颜色定义
+     */
     fill: {
         controlDefault: ThemeBrushColor
         controlSecondary: ThemeBrushColor
@@ -67,6 +80,9 @@ export interface ThemeType {
         solidBackgroundQuarternary: ThemeBrushColor
         solidBackgroundBaseAlt: ThemeBrushColor
     }
+    /**
+     * 描边颜色定义
+     */
     stroke: {
         controlDefault: ThemeBrushColor
         controlSecondary: ThemeBrushColor
@@ -86,6 +102,9 @@ export interface ThemeType {
         focusOuter: ThemeBrushColor
         focusInner: ThemeBrushColor
     }
+    /**
+     * 系统级颜色定义，如警告、成功、危险等状态颜色。
+     */
     system: {
         attention: ThemeBrushColor
         success: ThemeBrushColor
@@ -101,6 +120,9 @@ export interface ThemeType {
         solidAttentionBackground: ThemeBrushColor
         solidNeutralBackground: ThemeBrushColor
     },
+    /**
+     * 高对比度模式下的颜色定义。
+     */
     highContrast: {
         systemColorWindowTextColor: ThemeBrushColor
         systemColorWindowColor: ThemeBrushColor
