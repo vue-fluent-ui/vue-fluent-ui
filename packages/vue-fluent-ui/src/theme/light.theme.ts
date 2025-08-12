@@ -1,28 +1,21 @@
 import type {ThemeType} from "./theme.type.ts";
 
 export const getDefaultLightTheme = (): ThemeType => {
-    // 使用随机颜色生成一个占位的浅色主题（用于开发调试）。
-    // 注意：每次调用都会返回不同的颜色值。
-    const randomColor = (): `#${string}` => {
-        const c = Math.floor(Math.random() * 0xffffff);
-        return `#${c.toString(16).padStart(6, '0')}`;
-    };
-
     return {
         text: {
-            primary: randomColor(),
-            secondary: randomColor(),
-            tertiary: randomColor(),
-            disabled: randomColor(),
-            inverse: randomColor(),
-            accentPrimary: randomColor(),
-            accentSecondary: randomColor(),
-            accentTertiary: randomColor(),
-            accentDisabled: randomColor(),
-            onAccentFillColorSelectedText: randomColor(),
-            onAccentFillColorPrimary: randomColor(),
-            onAccentFillColorSecondary: randomColor(),
-            onAccentFillColorDisabled: randomColor(),
+            primary: "#000000E4", 
+            secondary: "#0000009E", 
+            tertiary: "#00000072", 
+            disabled: "#0000005C", 
+            inverse: "#FFFFFF", 
+            accentPrimary: "#未给出",
+            accentSecondary: "#未给出",
+            accentTertiary: "#未给出",
+            accentDisabled: "#0000005C", 
+            onAccentFillColorSelectedText: "#FFFFFF", 
+            onAccentFillColorPrimary: "#FFFFFF", 
+            onAccentFillColorSecondary: "#FFFFFFB3", 
+            onAccentFillColorDisabled: "#FFFFFF", 
         },
         fill: {
             controlDefault: randomColor(),
