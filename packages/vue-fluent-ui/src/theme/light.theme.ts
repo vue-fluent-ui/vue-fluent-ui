@@ -13,9 +13,9 @@ export const getDefaultLightTheme = (): ThemeType => {
             tertiary: "#00000072",
             disabled: "#0000005C",
             inverse: "#FFFFFF",
-            accentPrimary: "#未给出",
-            accentSecondary: "#未给出",
-            accentTertiary: "#未给出",
+            accentPrimary: "#003e92", // temp
+            accentSecondary: "#001a68", // temp
+            accentTertiary: "#005fbb", // temp
             accentDisabled: "#0000005C",
             onAccentFillColorSelectedText: "#FFFFFF",
             onAccentFillColorPrimary: "#FFFFFF",
@@ -45,10 +45,10 @@ export const getDefaultLightTheme = (): ThemeType => {
             controlOnImageSecondary: "#F3F3F3",
             controlOnImageTertiary: "#EBEBEB",
             controlOnImageDisabled: "#FFFFFF00",
-            accentSelectedTextBackground: "#未给出",
-            accentDefault: "#未给出",
-            accentSecondary: "#未给出",
-            accentTertiary: "#未给出",
+            accentSelectedTextBackground: "#0078d4", // temp
+            accentDefault: "#005fbb", // temp
+            accentSecondary: "#005fbb", // temp
+            accentTertiary: "#005ffbbcc", // temp
             accentDisabled: "#00000037",
             cardBackgroundDefault: "#FFFFFFB3",
             cardBackgroundSecondary: "#F6F6F680",
@@ -87,7 +87,7 @@ export const getDefaultLightTheme = (): ThemeType => {
             focusInner: "#FFFFFFB3",
         },
         system: {
-            attention: "#未给出",
+            attention: "#005EB6", //temp
             success: "#0F7B0F",
             caution: "#9D5D00",
             critical: "#C42B1C",
