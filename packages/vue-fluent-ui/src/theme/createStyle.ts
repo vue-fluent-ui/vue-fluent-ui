@@ -1,7 +1,16 @@
 import type {ThemeType} from "./theme.type.ts";
+import {kebabCase} from 'lodash'
+
+type Theme = ThemeType[keyof ThemeType];
 
 export const createStyle = (theme: ThemeType): string => {
-    // todo!()
-    // 这个函数应该把ThemeColor转成相对应的css上
-    return theme.primary
+    const cssRules: string[] = []
+    for (const type in theme) {
+        for (const name in theme[type as keyof ThemeType]) {
+            cssRules.push(
+                `--Vf-${type}-${kebabCase(name)}: ${theme[type as keyof ThemeType][name as keyof Theme]}`
+            )
+        }
+    }
+    return `html {${cssRules.join(';\n')}`
 }
