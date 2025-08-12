@@ -103,17 +103,17 @@ export const getDefaultLightTheme = (): ThemeType => {
         },
         // 暂时用不上
         highContrast: {
-            systemColorWindowTextColor: "#FF00FF",
-            systemColorWindowColor: "#FF00FF",
-            systemColorButtonFaceColor: "#FF00FF",
-            systemColorButtonTextColor: "#FF00FF",
-            systemColorHighlightColor: "#FF00FF",
-            systemColorHighlightTextColor: "#FF00FF",
-            systemColorHotlightColor: "#FF00FF",
-            systemColorGrayTextColor: "#FF00FF",
-            ControlElevationBorder: "#FF00FF",
-            CircleElevationBorder: "#FF00FF",
-            AccentControlElevationBorder: "#FF00FF",
+            systemColorWindowTextColor: "#1f1e33",
+            systemColorWindowColor: "#1f1e33",
+            systemColorButtonFaceColor: "#1f1e33",
+            systemColorButtonTextColor: "#1f1e33",
+            systemColorHighlightColor: "#1f1e33",
+            systemColorHighlightTextColor: "#1f1e33",
+            systemColorHotlightColor: "#1f1e33",
+            systemColorGrayTextColor: "#1f1e33",
+            ControlElevationBorder: "#1f1e33",
+            CircleElevationBorder: "#1f1e33",
+            AccentControlElevationBorder: "#1f1e33",
         },
     }
 }
