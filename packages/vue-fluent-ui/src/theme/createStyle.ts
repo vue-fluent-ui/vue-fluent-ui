@@ -13,7 +13,7 @@ export const createStyle = (theme: ThemeType): string => {
     for (const type in theme) {
         for (const name in theme[type as keyof ThemeType]) {
             cssRules.push(
-                `--Vf-${type}-${kebabCase(name)}: ${theme[type as keyof ThemeType][name as keyof Theme]}`
+                `--vf-${type}-${kebabCase(name)}: ${theme[type as keyof ThemeType][name as keyof Theme]}`
             )
         }
     }
