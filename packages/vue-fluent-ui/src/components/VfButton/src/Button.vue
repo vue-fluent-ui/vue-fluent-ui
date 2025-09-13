@@ -7,7 +7,9 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 </script>
 
 <template>
-  <button :disabled="props.disabled">
+  <button
+      :disabled="props.disabled"
+      class>
     <slot></slot>
   </button>
 </template>
