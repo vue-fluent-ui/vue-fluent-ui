@@ -1,14 +1,12 @@
 <!--请在这里测试组件-->
 <script setup lang="ts">
-import { VfProvider} from "vue-fluent-ui";
-
+import {VfButton, VfProvider} from "vue-fluent-ui";
 </script>
 
 <template>
   <vf-provider>
-new begin
+    <vf-button>hello world 2</vf-button>
   </vf-provider>
-
 </template>
 
 <style scoped>

@@ -1,8 +1,13 @@
 <script lang="ts" setup>
+import type {ButtonProps} from "./Button.ts";
+
+const props = withDefaults(defineProps<ButtonProps>(), {
+  disabled: false,
+})
 </script>
 
 <template>
-  <button>
+  <button :disabled="props.disabled">
     <slot></slot>
   </button>
 </template>
