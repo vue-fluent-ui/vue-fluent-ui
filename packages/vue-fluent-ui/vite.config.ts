@@ -21,5 +21,10 @@ export default defineConfig({
                 exports: 'named'
             }
         }
+    },
+    define: {
+        'import.meta.vitest': 'undefined',
     }
+
+
 })
