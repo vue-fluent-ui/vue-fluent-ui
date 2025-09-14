@@ -353,3 +353,174 @@ export const useNamespace = (
     }
 }
 
+// TEST
+if (import.meta.vitest) {
+    const {describe, it, expect} = import.meta.vitest
+
+    describe('useNamespace', () => {
+        const ns = useNamespace('button')
+
+        describe('基础功能', () => {
+            it('应该正确设置命名空间', () => {
+                expect(ns.namespace).toBe('vf')
+            })
+
+            it('b() - 应该生成基础块类名', () => {
+                expect(ns.b()).toBe('vf-button')
+            })
+
+            it('b() - 应该支持块后缀', () => {
+                expect(ns.b('group')).toBe('vf-button-group')
+                expect(ns.b('toolbar')).toBe('vf-button-toolbar')
+            })
+
+            it('e() - 应该生成元素类名', () => {
+                expect(ns.e('icon')).toBe('vf-button__icon')
+                expect(ns.e('text')).toBe('vf-button__text')
+                expect(ns.e('loading')).toBe('vf-button__loading')
+            })
+
+            it('e() - 空元素名应该返回空字符串', () => {
+                expect(ns.e()).toBe('')
+                expect(ns.e('')).toBe('')
+            })
+
+            it('m() - 应该生成修饰符类名', () => {
+                expect(ns.m('primary')).toBe('vf-button--primary')
+                expect(ns.m('large')).toBe('vf-button--large')
+                expect(ns.m('outline')).toBe('vf-button--outline')
+            })
+
+            it('m() - 空修饰符名应该返回空字符串', () => {
+                expect(ns.m()).toBe('')
+                expect(ns.m('')).toBe('')
+            })
+        })
+
+        describe('组合功能', () => {
+            it('be() - 应该生成复合块元素类名', () => {
+                expect(ns.be('group', 'item')).toBe('vf-button-group__item')
+                expect(ns.be('toolbar', 'wrapper')).toBe('vf-button-toolbar__wrapper')
+            })
+
+            it('be() - 参数不完整应该返回空字符串', () => {
+                expect(ns.be('group')).toBe('')
+                expect(ns.be('', 'item')).toBe('')
+                expect(ns.be()).toBe('')
+            })
+
+            it('em() - 应该生成元素修饰符类名', () => {
+                expect(ns.em('icon', 'large')).toBe('vf-button__icon--large')
+                expect(ns.em('text', 'bold')).toBe('vf-button__text--bold')
+                expect(ns.em('loading', 'spin')).toBe('vf-button__loading--spin')
+            })
+
+            it('em() - 参数不完整应该返回空字符串', () => {
+                expect(ns.em('icon')).toBe('')
+                expect(ns.em('', 'large')).toBe('')
+                expect(ns.em()).toBe('')
+            })
+
+            it('bm() - 应该生成复合块修饰符类名', () => {
+                expect(ns.bm('group', 'vertical')).toBe('vf-button-group--vertical')
+                expect(ns.bm('group', 'compact')).toBe('vf-button-group--compact')
+                expect(ns.bm('toolbar', 'floating')).toBe('vf-button-toolbar--floating')
+            })
+
+            it('bm() - 参数不完整应该返回空字符串', () => {
+                expect(ns.bm('group')).toBe('')
+                expect(ns.bm('', 'vertical')).toBe('')
+                expect(ns.bm()).toBe('')
+            })
+
+            it('bem() - 应该生成完整的 BEM 类名', () => {
+                expect(ns.bem('group', 'item', 'active')).toBe('vf-button-group__item--active')
+                expect(ns.bem('group', 'item', 'first')).toBe('vf-button-group__item--first')
+                expect(ns.bem('toolbar', 'button', 'hover')).toBe('vf-button-toolbar__button--hover')
+            })
+
+            it('bem() - 参数不完整应该返回空字符串', () => {
+                expect(ns.bem('group', 'item')).toBe('')
+                expect(ns.bem('group')).toBe('')
+                expect(ns.bem()).toBe('')
+                expect(ns.bem('', 'item', 'active')).toBe('')
+                expect(ns.bem('group', '', 'active')).toBe('')
+                expect(ns.bem('group', 'item', '')).toBe('')
+            })
+        })
+
+        describe('状态类名功能', () => {
+            it('is() - 应该生成状态类名（单参数形式）', () => {
+                expect(ns.is('disabled')).toBe('vf-is-disabled')
+                expect(ns.is('loading')).toBe('vf-is-loading')
+                expect(ns.is('active')).toBe('vf-is-active')
+            })
+
+            it('is() - 应该根据布尔值条件生成状态类名', () => {
+                expect(ns.is('disabled', true)).toBe('vf-is-disabled')
+                expect(ns.is('disabled', false)).toBe('')
+                expect(ns.is('loading', true)).toBe('vf-is-loading')
+                expect(ns.is('loading', false)).toBe('')
+            })
+
+            it('is() - 应该处理 undefined 状态', () => {
+                expect(ns.is('disabled', undefined)).toBe('')
+                expect(ns.is('loading', undefined)).toBe('')
+            })
+
+            it('is() - 空状态名应该返回空字符串', () => {
+                expect(ns.is('', true)).toBe('')
+                expect(ns.is('', false)).toBe('')
+                expect(ns.is('')).toBe('')
+            })
+        })
+
+        describe('不同组件的命名空间', () => {
+            it('应该为不同组件生成不同的基础类名', () => {
+                const inputNs = useNamespace('input')
+                const tableNs = useNamespace('table')
+                const modalNs = useNamespace('modal')
+
+                expect(inputNs.b()).toBe('vf-input')
+                expect(tableNs.b()).toBe('vf-table')
+                expect(modalNs.b()).toBe('vf-modal')
+
+                expect(inputNs.e('wrapper')).toBe('vf-input__wrapper')
+                expect(tableNs.e('cell')).toBe('vf-table__cell')
+                expect(modalNs.e('header')).toBe('vf-modal__header')
+            })
+        })
+
+        describe('边界情况', () => {
+            it('应该正确处理包含特殊字符的名称', () => {
+                const specialNs = useNamespace('complex-component')
+                expect(specialNs.b()).toBe('vf-complex-component')
+                expect(specialNs.e('sub-element')).toBe('vf-complex-component__sub-element')
+                expect(specialNs.m('large-size')).toBe('vf-complex-component--large-size')
+            })
+
+            it('应该保持状态前缀的一致性', () => {
+                const buttonNs = useNamespace('button')
+                const inputNs = useNamespace('input')
+
+                expect(buttonNs.is('disabled')).toBe('vf-is-disabled')
+                expect(inputNs.is('disabled')).toBe('vf-is-disabled')
+                expect(buttonNs.is('loading')).toBe('vf-is-loading')
+                expect(inputNs.is('loading')).toBe('vf-is-loading')
+            })
+        })
+
+        describe('内部配置', () => {
+            it('应该使用正确的默认命名空间', () => {
+                expect(defaultNamespace).toBe('vf')
+                // 验证命名空间在实际使用中的正确性
+                expect(ns.namespace).toBe(defaultNamespace)
+            })
+
+            it('状态前缀应该与命名空间保持一致', () => {
+                // 通过生成的状态类名验证状态前缀的正确性
+                expect(ns.is('test')).toBe(`${defaultNamespace}-is-test`)
+            })
+        })
+    })
+}

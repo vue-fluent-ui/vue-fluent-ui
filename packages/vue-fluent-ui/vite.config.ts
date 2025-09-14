@@ -22,9 +22,14 @@ export default defineConfig({
             }
         }
     },
+
+    // 添加 Vitest 配置以支持内联测试
+    test: {
+        includeSource: ['src/**/*.{js,ts,vue}']
+    },
+
+    // 只在生产构建时禁用 import.meta.vitest
     define: {
-        'import.meta.vitest': 'undefined',
+        'import.meta.vitest': process.env.NODE_ENV === 'production' ? 'undefined' : 'import.meta.vitest',
     }
-
-
 })
