@@ -14,5 +14,5 @@ const props = withDefaults(defineProps<ButtonProps>(), {
   </button>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
 </style>
