@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type {ButtonProps} from "./Button.ts";
-import {useNamespace} from "../../../utils/namespace.ts";
+import {useNamespace} from "@/utils/namespace.ts";
 import {computed} from "vue";
 
 const props = withDefaults(defineProps<ButtonProps>(), {
@@ -24,5 +24,12 @@ const buttonClass = computed(() => {
 </template>
 
 <style lang="scss">
+@use "@/styles/mixins/mixins";
 
+@include mixins.b(button) {
+  color: red;
+  @include mixins.e(icon) {
+    color: red;
+  }
+}
 </style>
