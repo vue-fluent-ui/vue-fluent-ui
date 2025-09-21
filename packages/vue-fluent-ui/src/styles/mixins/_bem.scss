@@ -1,0 +1,87 @@
+/**
+ * @fileOverview BEM 相关的 mixins
+ */
+@use '../config';
+
+/**
+ * B - Block
+ * 创建一个 BEM 块选择器
+ * @param {string} $block - 块的名称
+ * @example
+ *   @include b(button) {
+ *     color: #000;
+ *   }
+ *   // CSS Output
+ *   .vf-button {
+ *     color: #000;
+ *   }
+ */
+@mixin b($block) {
+  .#{config.$namespace}-#{$block} {
+    @content;
+  }
+}
+
+/**
+ * E - Element
+ * 创建一个 BEM 元素选择器，必须在块或另一个元素内部使用
+ * @param {string} $element - 元素的名称
+ * @example
+ *   @include b(button) {
+ *     @include e(icon) {
+ *       font-size: 14px;
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-button__icon {
+ *     font-size: 14px;
+ *   }
+ */
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/**
+ * M - Modifier
+ * 创建一个 BEM 修饰符选择器，用于修饰块或元素
+ * @param {string} $modifier - 修饰符的名称
+ * @example
+ *   @include b(button) {
+ *     @include m(primary) {
+ *       background-color: blue;
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-button--primary {
+ *     background-color: blue;
+ *   }
+ */
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+/**
+ * State - 状态
+ * 创建一个状态类选择器，对应 `is-` 前缀的类名
+ * @param {string} $state - 状态的名称 (e.g., 'disabled', 'active')
+ * @example
+ *   @include b(button) {
+ *     @include when(disabled) {
+ *       opacity: 0.5;
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-button.is-disabled {
+ *     opacity: 0.5;
+ *   }
+ */
+@mixin when($state) {
+  &.is-#{$state} {
+    @content;
+  }
+}
+
