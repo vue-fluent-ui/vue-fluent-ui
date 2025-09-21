@@ -24,11 +24,11 @@ const buttonClass = computed(() => {
 </template>
 
 <style lang="scss">
-@use "@/styles/mixins/mixins";
+@use "@/styles/mixins/mixins" as *;
 
-@include mixins.b(button) {
+@include b(button) {
   color: red;
-  @include mixins.e(icon) {
+  @include e(icon) {
     color: red;
   }
 }
