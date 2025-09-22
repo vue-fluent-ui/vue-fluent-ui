@@ -31,5 +31,6 @@ const buttonClass = computed(() => {
   @include e(icon) {
     color: red;
   }
+  background-color: var(--vf-text-primary);
 }
 </style>
