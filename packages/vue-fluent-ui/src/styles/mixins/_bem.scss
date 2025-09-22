@@ -5,20 +5,18 @@
 
 /**
  * B - Block
- * 创建一个 BEM 块选择器
+ * 创建一个 BEM 块选择器。
+ *
+ * 会将完整的块类名 (e.g. `.vf-button`) 作为参数传递给 `@content` 块,
+ * 可以通过 `using ($b)` 捕获该值以便在内容中引用。
+ *
  * @param {string} $block - 块的名称
- * @example
- *   @include b(button) {
- *     color: #000;
- *   }
- *   // CSS Output
- *   .vf-button {
- *     color: #000;
- *   }
+
  */
 @mixin b($block) {
-  .#{config.$namespace}-#{$block} {
-    @content;
+  $namespace: #{config.$namespace}-#{$block};
+  .#{$namespace} {
+    @content($namespace);
   }
 }
 

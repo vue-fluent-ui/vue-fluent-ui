@@ -26,11 +26,9 @@ const buttonClass = computed(() => {
 <style lang="scss">
 @use "@/styles/mixins/mixins" as *;
 
-@include b(button) {
-  color: red;
-  @include e(icon) {
-    color: red;
-  }
-  background-color: var(--vf-text-primary);
+@include b(button) using($self) {
+  @include set-var($self, 'accent-background', token('text-primary'));
+  background-color: get-var($self, 'accent-background');
+
 }
 </style>
