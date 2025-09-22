@@ -27,8 +27,8 @@ const buttonClass = computed(() => {
 @use "@/styles/mixins/mixins" as *;
 
 @include b(button) using($self) {
-  @include set-var($self, 'accent-background', token('text-primary'));
-  background-color: get-var($self, 'accent-background');
+  @include set-var($self, 'accent-background', token('fill-accent-default'));
+
 
 }
 </style>
