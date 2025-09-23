@@ -6,7 +6,6 @@ import {computed} from "vue";
 const props = withDefaults(defineProps<ButtonProps>(), {
   variant: 'standard',
   shape: 'rounded',
-  size: 'medium',
   disabled: false,
 })
 const ns = useNamespace('button');
@@ -40,6 +39,7 @@ const buttonClass = computed(() => {
   align-items: center;
   justify-content: center;
   cursor: default;
+  user-select: none;
   border: none;
   outline: none;
   // 聚焦颜色
