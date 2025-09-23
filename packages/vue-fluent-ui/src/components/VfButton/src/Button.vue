@@ -42,11 +42,9 @@ const buttonClass = computed(() => {
   @include m(standard) {
     padding: 5px 11px 6px 11px;
     color: token('text-primary');
-    border: 1px solid;
+    border: 1px solid token('border-control-elevation');
     background-color: token('fill-control-default');
-    background-image: token('border-control-elevation');
-    background-clip: padding-box, border-box;
-    background-origin: padding-box, border-box;
+
   }
   @include m(rounded) {
     border-radius: 4px;

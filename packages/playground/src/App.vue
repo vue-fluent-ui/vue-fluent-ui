@@ -17,9 +17,10 @@ function test() {
 
 <style scoped>
 .playground-container {
+  z-index: -200;
   box-sizing: border-box;
   min-height: 100vh;
   padding: 2rem;
-  background-color: white;
+  background-color: rgb(243, 243, 243);
 }
 </style>

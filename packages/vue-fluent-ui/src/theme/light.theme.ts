@@ -102,34 +102,14 @@ export const getDefaultLightTheme = (): ThemeType => {
             solidNeutralBackground: "#F3F3F3",
         },
         border: {
-            // todo 这里要改成引用css变量
-            // <LinearGradientBrush x:Key="ControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
-            //         <LinearGradientBrush.RelativeTransform>
-            //           <ScaleTransform ScaleY="-1" CenterY="0.5" />
-            //         </LinearGradientBrush.RelativeTransform>
-            //         <LinearGradientBrush.GradientStops>
-            //           <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}" />
-            //           <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}" />
-            //         </LinearGradientBrush.GradientStops>
-            //       </LinearGradientBrush>
-            //       <LinearGradientBrush x:Key="CircleElevationBorderBrush" MappingMode="RelativeToBoundingBox" StartPoint="0,0" EndPoint="0,1">
-            //         <LinearGradientBrush.GradientStops>
-            //           <GradientStop Offset="0.50" Color="{StaticResource ControlStrokeColorDefault}" />
-            //           <GradientStop Offset="0.70" Color="{StaticResource ControlStrokeColorSecondary}" />
-            //         </LinearGradientBrush.GradientStops>
-            //       </LinearGradientBrush>
-            //       <LinearGradientBrush x:Key="AccentControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
-            //         <LinearGradientBrush.RelativeTransform>
-            //           <ScaleTransform ScaleY="-1" CenterY="0.5" />
-            //         </LinearGradientBrush.RelativeTransform>
-            //         <LinearGradientBrush.GradientStops>
-            //           <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorOnAccentSecondary}" />
-            //           <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorOnAccentDefault}" />
-            //         </LinearGradientBrush.GradientStops>
-            //       </LinearGradientBrush>
-            controlElevation: "linear-gradient(to top, #0000000F, #00000029 67%)",
-            circleElevation: "linear-gradient(to bottom, #0000000F 50%, #00000029 70%)",
-            accentControlElevation: "linear-gradient(to top, #FFFFFF14, #00000066 67%)",
+            // todo 这里要改成支持namespace的形式
+            // css不支持渐变边框，只能用这种奇怪的技巧解决
+            controlElevation: "var(--vf-stroke-control-default) var(--vf-stroke-control-default)" +
+                " var(--vf-stroke-control-secondary) var(--vf-stroke-control-default)",
+            circleElevation: "var(--vf-stroke-control-default) var(--vf-stroke-control-default)" +
+                " var(--vf-stroke-control-secondary) var(--vf-stroke-control-default)",
+            accentControlElevation: "var(--vf-stroke-on-accent-default) var(--vf-stroke-on-accent-default)" +
+                " var(--vf-stroke-on-accent-secondary) var(--vf-stroke-on-accent-default)",
         },
         // 暂时用不上
         highContrast: {
