@@ -44,7 +44,8 @@ const buttonClass = computed(() => {
   outline: none;
 
   &:focus-visible {
-    @include focus-shadow;
+    box-shadow: 0 0 0 1px token('stroke-focus-inner'),
+    0 0 0 3px token('stroke-focus-outer');
   }
 
   @include m(standard) {

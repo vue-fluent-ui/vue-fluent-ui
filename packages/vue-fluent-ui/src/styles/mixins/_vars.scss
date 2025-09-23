@@ -15,19 +15,3 @@
 @function token($name) {
   @return var(--#{config.$namespace}-#{$name});
 }
-
-/**
- * @mixin focus-shadow
- * @description 应用一个标准的焦点轮廓阴影样式。
- * 此宏封装了 `box-shadow` 属性，用于创建符合设计规范的双层焦点环。
- * 为了获得最佳视觉效果，建议与 `outline: none` 配合使用。
- * @example
- * .my-component:focus-visible {
- *   outline: none;
- *   @include focus-shadow;
- * }
- */
-@mixin focus-shadow {
-  box-shadow: 0 0 0 1px token('stroke-focus-inner'),
-  0 0 0 3px token('stroke-focus-outer');
-}
