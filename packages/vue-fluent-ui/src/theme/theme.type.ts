@@ -129,6 +129,7 @@ export interface ThemeType {
     radius: {
         overlayCorner: string,
         controlCorner: string,
+        circular: string
     },
     /**
      * 高对比度模式下的颜色定义。

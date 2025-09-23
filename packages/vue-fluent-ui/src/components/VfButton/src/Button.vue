@@ -42,12 +42,12 @@ const buttonClass = computed(() => {
   cursor: default;
   border: none;
   outline: none;
-
+  // 聚焦颜色
   &:focus-visible {
     box-shadow: 0 0 0 1px token('stroke-focus-inner'),
     0 0 0 3px token('stroke-focus-outer');
   }
-
+  // variant
   @include m(standard) {
     padding: 5px 11px 6px 11px;
     color: token('text-primary');
@@ -69,9 +69,17 @@ const buttonClass = computed(() => {
       background-color: token('fill-control-disabled');
     }
   }
+  // shape
   @include m(rounded) {
-    border-radius: 4px;
+    border-radius: token('radius-control-corner');
   }
+  @include m(circular) {
+    border-radius: token('radius-circular');
+  }
+  @include m(square) {
+    border-radius: 0;
+  }
+  // 状态
   @include when(disabled) {
     pointer-events: none;
   }

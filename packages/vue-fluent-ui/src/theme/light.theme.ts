@@ -114,6 +114,7 @@ export const getDefaultLightTheme = (): ThemeType => {
         radius: {
             overlayCorner: '8px',
             controlCorner: '4px',
+            circular: '10000px',
         },
         // 暂时用不上
         highContrast: {
