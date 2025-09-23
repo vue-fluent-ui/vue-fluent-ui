@@ -81,7 +81,7 @@ const buttonClass = computed(() => {
   }
   // 状态
   @include when(disabled) {
-    pointer-events: none;
+    cursor: not-allowed;
   }
 
 }
