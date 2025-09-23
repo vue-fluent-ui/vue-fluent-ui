@@ -125,6 +125,11 @@ export interface ThemeType {
         circleElevation: string,
         accentControlElevation: string,
     },
+
+    radius: {
+        overlayCorner: string,
+        controlCorner: string,
+    },
     /**
      * 高对比度模式下的颜色定义。
      */

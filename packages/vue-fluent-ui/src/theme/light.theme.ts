@@ -111,6 +111,10 @@ export const getDefaultLightTheme = (): ThemeType => {
             accentControlElevation: "var(--vf-stroke-on-accent-default) var(--vf-stroke-on-accent-default)" +
                 " var(--vf-stroke-on-accent-secondary) var(--vf-stroke-on-accent-default)",
         },
+        radius: {
+            overlayCorner: '8px',
+            controlCorner: '4px',
+        },
         // 暂时用不上
         highContrast: {
             systemColorWindowTextColor: "#1f1e33",
