@@ -38,18 +38,42 @@ const buttonClass = computed(() => {
   position: relative;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   cursor: default;
+  border: none;
+  outline: none;
+
+  &:focus-visible {
+    @include focus-shadow;
+  }
+
   @include m(standard) {
     padding: 5px 11px 6px 11px;
     color: token('text-primary');
-    border: 1px solid token('border-control-elevation');
+    border: 1px solid;
+    // border-control-elevation是不支持速记的
+    border-color: token('border-control-elevation');
     background-color: token('fill-control-default');
-
+    &:hover {
+      background-color: token('fill-control-secondary');
+    }
+    &:active {
+      color: token('text-secondary');
+      border-color: token("stroke-control-default");
+      background-color: token('fill-control-tertiary');
+    }
+    &:disabled {
+      color: token('text-disabled');
+      border-color: token('stroke-control-default');
+      background-color: token('fill-control-disabled');
+    }
   }
   @include m(rounded) {
     border-radius: 4px;
   }
-
+  @include when(disabled) {
+    pointer-events: none;
+  }
 
 }
 </style>

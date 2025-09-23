@@ -84,7 +84,7 @@ export const getDefaultLightTheme = (): ThemeType => {
             surfaceInverse: "#FFFFFF15",
             dividerDefault: "#0000000F",
             focusOuter: "#000000E4",
-            focusInner: "#FFFFFFB3",
+            focusInner: "#FFFFFF",
         },
         system: {
             attention: "#005EB6", //temp

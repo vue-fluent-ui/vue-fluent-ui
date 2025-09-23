@@ -1,15 +1,33 @@
 /**
-  @fileOverview css变量相关mixin
+ * @fileOverview 提供与设计令牌和通用样式片段相关的 Sass 函数和宏。
  */
 @use '../config';
 
 /**
- * @description 从全局设计令牌中获取一个值。
- * @param {String} $name - 全局令牌的名称（不带前缀），例如 'text-primary'。
- * @return {String} - 返回一个引用全局 CSS 变量的 var() 函数调用，例如 var(--vf-color-primary)。
+ * @function token
+ * @description 根据令牌名称生成一个 CSS 变量引用。
+ * 此函数会自动将项目配置的命名空间作为前缀。
+ * @param {String} $name - 设计令牌的名称（不带项目命名空间前缀），例如 'color-text-primary'。
+ * @return {String} - 返回一个完整的 CSS var() 函数，例如 var(--vf-color-text-primary)。
  * @example
- *   background-color: token('text-primary');
+ *   color: token('color-text-primary');
  */
 @function token($name) {
   @return var(--#{config.$namespace}-#{$name});
+}
+
+/**
+ * @mixin focus-shadow
+ * @description 应用一个标准的焦点轮廓阴影样式。
+ * 此宏封装了 `box-shadow` 属性，用于创建符合设计规范的双层焦点环。
+ * 为了获得最佳视觉效果，建议与 `outline: none` 配合使用。
+ * @example
+ * .my-component:focus-visible {
+ *   outline: none;
+ *   @include focus-shadow;
+ * }
+ */
+@mixin focus-shadow {
+  box-shadow: 0 0 0 1px token('stroke-focus-inner'),
+  0 0 0 3px token('stroke-focus-outer');
 }
