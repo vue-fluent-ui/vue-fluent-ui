@@ -78,7 +78,7 @@
  *   }
  */
 @mixin when($state) {
-  &.is-#{$state} {
+  &.#{config.$namespace}-is-#{$state} {
     @content;
   }
 }

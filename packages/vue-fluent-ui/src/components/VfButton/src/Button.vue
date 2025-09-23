@@ -13,6 +13,10 @@ const ns = useNamespace('button');
 const buttonClass = computed(() => {
   return [
     ns.b(),
+    ns.is("disabled", props.disabled),
+    ns.m(props.variant),
+    ns.m(props.shape),
+    ns.m(props.size),
   ]
 })
 </script>
@@ -20,6 +24,7 @@ const buttonClass = computed(() => {
 <template>
   <button
       :disabled="props.disabled"
+      :aria-disabled="props.disabled"
       :class="buttonClass"
   >
     <slot></slot>
@@ -30,7 +35,7 @@ const buttonClass = computed(() => {
 @use "@/styles/mixins/mixins" as *;
 
 @include b(button) using($self) {
-  @include set-var($self, 'accent-background', token('fill-accent-default'));
+  position: relative;
 
 
 }
