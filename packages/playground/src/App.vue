@@ -8,11 +8,15 @@ function test() {
 </script>
 
 <template>
-  <vf-provider>
-    <vf-button @click="test()">hello world 2</vf-button>
-  </vf-provider>
+  <div class="playground-container">
+    <vf-provider>
+      <vf-button @click="test()">hello world 2</vf-button>
+    </vf-provider>
+  </div>
 </template>
 
 <style scoped>
-
+.playground-container {
+  padding: 2rem;
+}
 </style>
