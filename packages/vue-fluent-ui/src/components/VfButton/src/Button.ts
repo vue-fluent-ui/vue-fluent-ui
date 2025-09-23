@@ -1,4 +1,6 @@
 export interface ButtonProps {
-    variant?: string,
+    variant?: "standard" | "accent"
+    shape?: "rounded" | "circular" | "square"
+    size?: "small" | "medium" | "large"
     disabled?: boolean
 }

@@ -4,6 +4,9 @@ import {useNamespace} from "@/utils/namespace.ts";
 import {computed} from "vue";
 
 const props = withDefaults(defineProps<ButtonProps>(), {
+  variant: 'standard',
+  shape: 'rounded',
+  size: 'medium',
   disabled: false,
 })
 const ns = useNamespace('button');
