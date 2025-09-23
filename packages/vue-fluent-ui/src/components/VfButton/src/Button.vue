@@ -34,9 +34,14 @@ const buttonClass = computed(() => {
 <style lang="scss">
 @use "@/styles/mixins/mixins" as *;
 
-@include b(button) using($self) {
+@include b(button) {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: token('text-primary');
 
+  border-radius: 4px;
+  background-color: token('fill-control-default');
 
 }
 </style>

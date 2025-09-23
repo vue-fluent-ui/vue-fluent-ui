@@ -4,31 +4,6 @@
 @use '../config';
 
 /**
- * @description 在组件作用域内定义一个 CSS 自定义属性（CSS 变量）。
- * @param {String} $self - 组件的命名空间，例如 'vf-button'。
- * @param {String} $name - 变量的后缀，例如 'color'。
- * @param {*} $value - 要分配给变量的值。
- * @example
- *   @include set-var('vf-button', 'color', red);
- *   // CSS aOutput: --vf-button-color: red;
- */
-@mixin set-var($self, $name, $value) {
-  --#{$self}-#{$name}: #{$value};
-}
-
-/**
- * @description 获取在组件作用域内定义的 CSS 变量。
- * @param {String} $self - 组件的命名空间，例如 'vf-button'。
- * @param {String} $name - 变量的后缀，例如 'color'。
- * @return {String} - 返回一个 CSS var() 函数调用，例如 var(--vf-button-color)。
- * @example
- *   color: get-var('vf-button', 'color');
- */
-@function get-var($self, $name) {
-  @return var(--#{$self}-#{$name});
-}
-
-/**
  * @description 从全局设计令牌中获取一个值。
  * @param {String} $name - 全局令牌的名称（不带前缀），例如 'text-primary'。
  * @return {String} - 返回一个引用全局 CSS 变量的 var() 函数调用，例如 var(--vf-color-primary)。
