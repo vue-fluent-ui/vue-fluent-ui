@@ -38,10 +38,20 @@ const buttonClass = computed(() => {
   position: relative;
   display: inline-flex;
   align-items: center;
-  color: token('text-primary');
+  cursor: default;
+  @include m(standard) {
+    padding: 5px 11px 6px 11px;
+    color: token('text-primary');
+    border: 1px solid;
+    background-color: token('fill-control-default');
+    background-image: token('border-control-elevation');
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+  @include m(rounded) {
+    border-radius: 4px;
+  }
 
-  border-radius: 4px;
-  background-color: token('fill-control-default');
 
 }
 </style>

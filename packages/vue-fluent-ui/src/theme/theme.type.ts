@@ -120,6 +120,11 @@ export interface ThemeType {
         solidAttentionBackground: ThemeBrushColor
         solidNeutralBackground: ThemeBrushColor
     },
+    border: {
+        controlElevation: string,
+        circleElevation: string,
+        accentControlElevation: string,
+    },
     /**
      * 高对比度模式下的颜色定义。
      */
@@ -132,8 +137,5 @@ export interface ThemeType {
         systemColorHighlightTextColor: ThemeBrushColor
         systemColorHotlightColor: ThemeBrushColor
         systemColorGrayTextColor: ThemeBrushColor
-        ControlElevationBorder: ThemeBrushColor
-        CircleElevationBorder: ThemeBrushColor
-        AccentControlElevationBorder: ThemeBrushColor
     }
 }
