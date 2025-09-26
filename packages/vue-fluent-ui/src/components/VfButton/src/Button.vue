@@ -30,15 +30,22 @@ const buttonClass = computed(() => {
 </template>
 
 <style lang="scss">
+// todo 字体
+
 @use "@/styles/mixins/mixins" as *;
 
 @include b(button) {
+  font-size: 14px;
+  font-weight: normal;
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: default;
   user-select: none;
+  transition-timing-function: ease;
+  transition-duration: 83ms;
+  transition-property: background;
   border: none;
   outline: none;
   // 聚焦颜色

@@ -116,6 +116,12 @@ export const getDefaultLightTheme = (): ThemeType => {
             controlCorner: '4px',
             circular: '10000px',
         },
+        duration: {
+            controlNormalAnimation: '250ms',
+            controlFastAnimation: '167ms',
+            controlFastAnimationAfter: '168ms',
+            controlFasterAnimation: '83ms',
+        },
         // 暂时用不上
         highContrast: {
             systemColorWindowTextColor: "#1f1e33",

@@ -125,11 +125,16 @@ export interface ThemeType {
         circleElevation: string,
         accentControlElevation: string,
     },
-
     radius: {
         overlayCorner: string,
         controlCorner: string,
         circular: string
+    },
+    duration: {
+        controlNormalAnimation: string;
+        controlFastAnimation: string;
+        controlFastAnimationAfter: string;
+        controlFasterAnimation: string;
     },
     /**
      * 高对比度模式下的颜色定义。
