@@ -15,7 +15,6 @@ const buttonClass = computed(() => {
     ns.is("disabled", props.disabled),
     ns.m(props.variant),
     ns.m(props.shape),
-    ns.m(props.size),
   ]
 })
 </script>
