@@ -106,7 +106,7 @@ const buttonClass = computed(() => {
   }
   // 状态
   @include when(disabled) {
-    // 指针保持默认
+    cursor: default;
   }
 
 }
