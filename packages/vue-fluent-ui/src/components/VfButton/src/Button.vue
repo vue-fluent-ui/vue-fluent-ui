@@ -41,21 +41,21 @@ const buttonClass = computed(() => {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  padding: 5px 11px 6px 11px;
   cursor: default;
   user-select: none;
   transition-timing-function: ease;
   transition-duration: 83ms;
   transition-property: background;
   border: none;
-  outline: none;
   // 聚焦颜色
   &:focus-visible {
     box-shadow: 0 0 0 1px token('stroke-focus-inner'),
     0 0 0 3px token('stroke-focus-outer');
   }
+  outline: none;
   // variant
   @include m(standard) {
-    padding: 5px 11px 6px 11px;
     color: token('text-primary');
     border: 1px solid;
     // border-control-elevation是不支持速记的
@@ -74,6 +74,9 @@ const buttonClass = computed(() => {
       border-color: token('stroke-control-default');
       background-color: token('fill-control-disabled');
     }
+  }
+  @include m(accent) {
+
   }
   // shape
   @include m(rounded) {
