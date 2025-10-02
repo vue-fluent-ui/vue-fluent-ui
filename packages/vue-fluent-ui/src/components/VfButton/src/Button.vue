@@ -30,13 +30,12 @@ const buttonClass = computed(() => {
 </template>
 
 <style lang="scss">
-// todo 字体
-
 @use "@/styles/mixins/mixins" as *;
 
 @include b(button) {
   font-size: 14px;
   font-weight: normal;
+  line-height: 20px;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -47,6 +46,7 @@ const buttonClass = computed(() => {
   transition-timing-function: ease;
   transition-duration: 83ms;
   transition-property: background;
+  text-align: center;
   border: 1px solid;
   outline: none;
 
