@@ -49,6 +49,7 @@ const buttonClass = computed(() => {
   transition-property: background;
   border: 1px solid;
   outline: none;
+
   // 聚焦颜色
   &:focus-visible {
     box-shadow: 0 0 0 1px token('stroke-focus-inner'),
@@ -81,6 +82,9 @@ const buttonClass = computed(() => {
       background-color: token('fill-accent-secondary');
     }
     &:active {
+      color: token('text-on-accent-fill-color-secondary');
+      border-color: token('fill-control-transparent');
+      background-color: token('fill-accent-tertiary');
 
     }
     &:disabled {
@@ -99,7 +103,7 @@ const buttonClass = computed(() => {
   }
   // 状态
   @include when(disabled) {
-    cursor: not-allowed;
+    // 指针保持默认
   }
 
 }

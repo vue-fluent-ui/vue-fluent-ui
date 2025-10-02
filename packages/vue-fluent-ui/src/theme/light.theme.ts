@@ -27,7 +27,7 @@ export const getDefaultLightTheme = (): ThemeType => {
             controlSecondary: "#F9F9F980",
             controlTertiary: "#F9F9F94D",
             controlDisabled: "#F9F9F94D",
-            controlTransparent: "#FFFFFF00",
+            controlTransparent: "transparent",
             controlInputActive: "#FFFFFF",
             controlStrongDefault: "#00000072",
             controlStrongDisabled: "#00000051",
