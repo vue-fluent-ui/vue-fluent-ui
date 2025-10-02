@@ -1,7 +1,9 @@
+import type {App} from "vue";
+import * as components from "./components"
+
+export {VfProvider, VfButton, VfToggleSwitch} from "./components"
 export * from "./components/index"
 export * from "./theme/index"
-import * as components from "./components"
-import type {App} from "vue";
 
 /**
  * 为所有 vue-fluent-ui 组件提供安装函数。
