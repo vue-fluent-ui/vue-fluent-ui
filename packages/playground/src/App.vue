@@ -12,11 +12,17 @@ function test() {
     <vf-provider>
 
       <vf-button @click="test()">Standard Button</vf-button>
-      <vf-button shape="circular">Square Button</vf-button>
+      <vf-button shape="circular">Circular Button</vf-button>
       <vf-button shape="square">Square Button</vf-button>
       <vf-button disabled @click="test()">Standard Button</vf-button>
-      <vf-button disabled shape="circular">Square Button</vf-button>
+      <vf-button disabled shape="circular">Circular Button</vf-button>
       <vf-button disabled shape="square">Square Button</vf-button>
+      <vf-button variant="accent">Accent Button</vf-button>
+      <vf-button shape="circular" variant="accent">Accent Button</vf-button>
+      <vf-button shape="square" variant="accent">Accent Button</vf-button>
+      <vf-button disabled variant="accent">Accent Button</vf-button>
+      <vf-button disabled shape="circular" variant="accent">Accent Button</vf-button>
+      <vf-button disabled shape="square" variant="accent">Accent Button</vf-button>
 
     </vf-provider>
   </div>

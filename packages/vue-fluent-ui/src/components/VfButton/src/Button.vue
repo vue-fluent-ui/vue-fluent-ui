@@ -47,18 +47,16 @@ const buttonClass = computed(() => {
   transition-timing-function: ease;
   transition-duration: 83ms;
   transition-property: background;
-  border: none;
+  border: 1px solid;
+  outline: none;
   // 聚焦颜色
   &:focus-visible {
     box-shadow: 0 0 0 1px token('stroke-focus-inner'),
     0 0 0 3px token('stroke-focus-outer');
   }
-  outline: none;
   // variant
   @include m(standard) {
     color: token('text-primary');
-    border: 1px solid;
-    // border-control-elevation是不支持速记的
     border-color: token('border-control-elevation');
     background-color: token('fill-control-default');
     &:hover {
@@ -76,7 +74,18 @@ const buttonClass = computed(() => {
     }
   }
   @include m(accent) {
+    color: token('text-on-accent-fill-color-primary');
+    border-color: token('border-accent-control-elevation');
+    background-color: token('fill-accent-default');
+    &:hover {
+      background-color: token('fill-accent-secondary');
+    }
+    &:active {
 
+    }
+    &:disabled {
+
+    }
   }
   // shape
   @include m(rounded) {

@@ -121,6 +121,7 @@ export interface ThemeType {
         solidNeutralBackground: ThemeBrushColor
     },
     border: {
+        // 这些token不支持border的速记形式，请显式使用border-color
         controlElevation: string,
         circleElevation: string,
         accentControlElevation: string,
