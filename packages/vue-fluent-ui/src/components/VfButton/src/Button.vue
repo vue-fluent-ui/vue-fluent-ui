@@ -88,7 +88,9 @@ const buttonClass = computed(() => {
 
     }
     &:disabled {
-
+      color: token('text-on-accent-fill-color-disabled');
+      border-color: token('fill-control-transparent');
+      background-color: token('fill-accent-disabled');
     }
   }
   // shape
