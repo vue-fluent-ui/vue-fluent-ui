@@ -8,6 +8,7 @@ export default defineConfig({
     lib: [
         {
             format: 'esm',
+            dts: true,
         },
     ],
     output: {
