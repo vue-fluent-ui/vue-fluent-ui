@@ -16,12 +16,14 @@
     "noUncheckedSideEffectImports": true,
     "types": [
       "vitest/importMeta"
-    ]
+    ],
+    "isolatedModules": true
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "vite.config.ts"
+    "vite.config.ts",
+    "rslib.config.ts"
   ]
 }

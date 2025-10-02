@@ -24,7 +24,7 @@
   ],
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build",
+    "build": "rslib build",
     "build:publish": "pnpm run build && pnpm publish ",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -34,12 +34,13 @@
     "vue": "^3.5.13"
   },
   "devDependencies": {
+    "@rsbuild/plugin-sass": "^1.4.0",
+    "@rslib/core": "^0.15.0",
     "@types/lodash": "^4.17.20",
     "@vitejs/plugin-vue": "^5.2.3",
     "@vitest/ui": "3.2.4",
     "@vue/tsconfig": "^0.7.0",
-    "sass": "^1.89.0",
-    "sass-loader": "^16.0.5",
+    "rsbuild-plugin-unplugin-vue": "^0.1.0",
     "typescript": "~5.8.3",
     "vite": "^7.1.5",
     "vite-plugin-dts": "^4.5.4",
