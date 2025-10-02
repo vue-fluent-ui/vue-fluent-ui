@@ -27,7 +27,7 @@ export const getDefaultLightTheme = (): ThemeType => {
             controlSecondary: "#F9F9F980",
             controlTertiary: "#F9F9F94D",
             controlDisabled: "#F9F9F94D",
-            controlTransparent: "transparent",
+            controlTransparent: "#FFFFFF00",
             controlInputActive: "#FFFFFF",
             controlStrongDefault: "#00000072",
             controlStrongDisabled: "#00000051",
@@ -108,8 +108,8 @@ export const getDefaultLightTheme = (): ThemeType => {
                 " var(--vf-stroke-control-secondary) var(--vf-stroke-control-default)",
             circleElevation: "var(--vf-stroke-control-default) var(--vf-stroke-control-default)" +
                 " var(--vf-stroke-control-secondary) var(--vf-stroke-control-default)",
-            accentControlElevation: "var(--vf-stroke-on-accent-default) var(--vf-stroke-on-accent-default)" +
-                " var(--vf-stroke-on-accent-secondary) var(--vf-stroke-on-accent-default)",
+            accentControlElevation: "var(--vf-stroke-control-on-accent-default) var(--vf-stroke-control-on-accent-default)" +
+                " var(--vf-stroke-control-on-accent-secondary) var(--vf-stroke-control-on-accent-default)",
         },
         radius: {
             overlayCorner: '8px',

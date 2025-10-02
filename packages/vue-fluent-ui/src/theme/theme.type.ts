@@ -40,7 +40,7 @@ export interface ThemeType {
         controlSecondary: ThemeBrushColor
         controlTertiary: ThemeBrushColor
         controlDisabled: ThemeBrushColor
-        controlTransparent: string
+        controlTransparent: ThemeBrushColor
         controlInputActive: ThemeBrushColor
         controlStrongDefault: ThemeBrushColor
         controlStrongDisabled: ThemeBrushColor
