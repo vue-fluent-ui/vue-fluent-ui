@@ -78,6 +78,7 @@ const buttonClass = computed(() => {
     color: token('text-on-accent-fill-color-primary');
     border-color: token('border-accent-control-elevation');
     background-color: token('fill-accent-default');
+    // todo border color这里是inner的，不是outerEdge的 可选修复
     &:hover {
       background-color: token('fill-accent-secondary');
     }
