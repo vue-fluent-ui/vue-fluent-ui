@@ -1,5 +1,5 @@
 import ToggleSwitch from './src/ToggleSwitch.vue'
-import {withInstall} from "../../utils/install";
+import {withInstall} from "@/utils/install.ts";
 
 // noinspection JSUnusedGlobalSymbols
 export const VfToggleSwitch = withInstall(ToggleSwitch)
