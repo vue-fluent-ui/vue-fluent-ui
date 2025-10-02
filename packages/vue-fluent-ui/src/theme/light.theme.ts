@@ -48,7 +48,7 @@ export const getDefaultLightTheme = (): ThemeType => {
             accentSelectedTextBackground: "#0078d4", // temp
             accentDefault: "#005fbb", // temp
             accentSecondary: "#005fbbe5", // temp
-            accentTertiary: "#005ffbbc", // temp
+            accentTertiary: "#005fb8cc", // temp
             accentDisabled: "#00000037",
             cardBackgroundDefault: "#FFFFFFB3",
             cardBackgroundSecondary: "#F6F6F680",
