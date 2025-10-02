@@ -64,8 +64,6 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   padding: 2rem;
-  color: var(--vf-text-primary);
-  background-color: var(--vf-fill-solidBackgroundBase);
   gap: 2rem;
 }
 
@@ -99,7 +97,6 @@ h1 {
 h2 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--vf-stroke-dividerDefault);
 }
 
 h3 {
