@@ -76,7 +76,8 @@ const switchId = useId()
 @include b(toggle-switch) {
   display: inline-block;
   min-width: 154px;
-  // todo focusvisualmargin
+  // todo focus visual margin
+  // 隐藏input
   @include e(input) {
     border: 0;
     clip: rect(0 0 0 0);
@@ -94,6 +95,31 @@ const switchId = useId()
     color: token('text-primary');
     font-size: 14px;
     border-radius: token('radius-control-corner');
+    cursor: pointer;
+  }
+  @include e(container) {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  @include e(track) {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px; // winui3这里是写死的
+    background-color: token('fill-control-alt-secondary');
+    border: 1px solid token('stroke-control-strong-default');
+    flex-shrink: 0;
+  }
+  @include e(knob) {
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+
   }
 }
 </style>
