@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import type {ToggleSwitchProps} from "@/components";
 import {useNamespace} from "@/utils/namespace.ts";
-import {computed} from "vue";
+import {computed, useId} from "vue";
 
 const ns = useNamespace('toggle-switch')
 
@@ -25,10 +25,7 @@ const handleChange = (event: Event) => {
 
 
 // todo 临时id生成
-const switchId =
-    `${ns.b()}-${Math.random().toString(36).slice(2)}`
-
-
+const switchId = useId()
 </script>
 
 <template>
@@ -48,14 +45,25 @@ const switchId =
           :class="ns.e('input')"
           @change="handleChange"
       />
-      <!--todo header部分-->
+      <!--header部分-->
+      <span v-if="header" :class="ns.e('header')">
+        {{ header }}
+      </span>
 
-      <!--开关主体-->
       <span :class="ns.e('container')">
+        <!--开关主体-->
         <span :class="ns.e('track')">
           <span :class="ns.e('knob')"></span>
         </span>
-        <span :class="ns.e('content')"></span>
+        <!--内容部分-->
+        <span :class="ns.e('content')">
+          <span v-if="checked" :class="ns.e('on-content')">
+            {{ props.onContent }}
+          </span>
+          <span v-else :class="ns.e('off-content')">
+              {{ props.offContent }}
+          </span>
+        </span>
 
       </span>
     </label>
