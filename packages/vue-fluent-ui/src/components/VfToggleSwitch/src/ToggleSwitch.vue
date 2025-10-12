@@ -71,4 +71,29 @@ const switchId = useId()
 </template>
 
 <style lang="scss">
+@use "@/styles/mixins/mixins" as *;
+
+@include b(toggle-switch) {
+  display: inline-block;
+  min-width: 154px;
+  // todo focusvisualmargin
+  @include e(input) {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+  }
+  @include e(wrapper) {
+    display: inline-flex;
+    align-items: center;
+    color: token('text-primary');
+    font-size: 14px;
+    border-radius: token('radius-control-corner');
+  }
+}
 </style>
