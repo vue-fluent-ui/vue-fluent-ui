@@ -3,6 +3,8 @@ import type {ToggleSwitchProps} from "@/components";
 import {useNamespace} from "@/utils/namespace.ts";
 import {computed} from "vue";
 
+const ns = useNamespace('toggle-switch')
+
 const props = withDefaults(defineProps<ToggleSwitchProps>(), {
   disabled: false,
   onContent: '',
@@ -21,12 +23,10 @@ const handleChange = (event: Event) => {
   emit('change', newValue);
 }
 
-// todo 临时id生成
-const switchId = computed(() => {
-  return `${ns.b()}-${Math.random().toString(36).slice(2)}`
-})
 
-const ns = useNamespace('toggle-switch')
+// todo 临时id生成
+const switchId =
+    `${ns.b()}-${Math.random().toString(36).slice(2)}`
 
 
 </script>
