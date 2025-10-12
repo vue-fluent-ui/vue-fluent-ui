@@ -119,6 +119,10 @@ const switchId = useId()
     left: 3px;
     width: 12px;
     height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: token('text-secondary');
+
 
   }
 }
