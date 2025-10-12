@@ -5,8 +5,6 @@ import {ref} from "vue";
 
 // 用于演示的响应式数据
 const switch1 = ref(false);
-const switch2 = ref(true);
-const switch3 = ref(false);
 </script>
 
 <template>
@@ -65,54 +63,6 @@ const switch3 = ref(false);
           <div class="button-row">
             <VfToggleSwitch v-model="switch1" />
             <p>当前状态: {{ switch1 ? '开启' : '关闭' }}</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>默认开启的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch2" />
-            <p>当前状态: {{ switch2 ? '开启' : '关闭' }}</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>禁用的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch3" :disabled="true" />
-            <p>当前状态: {{ switch3 ? '开启' : '关闭' }} (禁用)</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>带有文本内容的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch1" off-content="关闭" on-content="开启" />
-            <p>当前状态: {{ switch1 ? '开启' : '关闭' }}</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>禁用且带文本的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch2" :disabled="true" off-content="关闭" on-content="开启" />
-            <p>当前状态: {{ switch2 ? '开启' : '关闭' }} (禁用)</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>带标题的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch1" header="启用夜间模式" />
-            <p>当前状态: {{ switch1 ? '开启' : '关闭' }}</p>
-          </div>
-        </div>
-
-        <div class="group">
-          <h3>带标题和文本的开关</h3>
-          <div class="button-row">
-            <VfToggleSwitch v-model="switch3" header="自动更新" off-content="关闭" on-content="开启" />
-            <p>当前状态: {{ switch3 ? '开启' : '关闭' }}</p>
           </div>
         </div>
       </section>

@@ -22,14 +22,20 @@ const handleChange = (event: Event) => {
   emit('update:modelValue', newValue);
   emit('change', newValue);
 }
-
+const toggleSwitchClass = computed(() => {
+  console.log(ns.is('on', checked.value))
+  return [
+    ns.b(),
+    ns.is('on', checked.value)
+  ]
+})
 
 // todo 临时id生成
 const switchId = useId()
 </script>
 
 <template>
-  <div :class="ns.b()">
+  <div :class="toggleSwitchClass">
     <!--Wrapper-->
     <label :class="ns.e('wrapper')" :for="switchId">
       <!--隐藏的checkbox-->
@@ -41,13 +47,13 @@ const switchId = useId()
           role="switch"
           type="checkbox"
           :aria-disabled="props.disabled"
-          :aria-label="header || 'Toggle Switch'"
+          :aria-label="props.header || 'Toggle Switch'"
           :class="ns.e('input')"
           @change="handleChange"
       />
       <!--header部分-->
-      <span v-if="header" :class="ns.e('header')">
-        {{ header }}
+      <span v-if="props.header" :class="ns.e('header')">
+        {{ props.header }}
       </span>
 
       <span :class="ns.e('container')">
@@ -77,6 +83,7 @@ const switchId = useId()
   display: inline-block;
   min-width: 154px;
   // todo focus visual margin
+
   // 隐藏input
   @include e(input) {
     border: 0;
@@ -122,8 +129,17 @@ const switchId = useId()
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: token('text-secondary');
-
-
   }
+  @include when(on) {
+    @include e(track) {
+      border-color: token('fill-accent-default');
+      // 避免引起布局抖动
+      background-color: token('fill-accent-default');
+    }
+    @include e(knob) {
+      background-color: token('text-on-accent-fill-color-primary');
+    }
+  }
+
 }
 </style>
