@@ -130,7 +130,7 @@ const switchId = useId()
     border-radius: 50%;
     background-color: token('text-secondary');
   }
-  @include when(on) {
+  @include when-with-context(on) {
     @include e(track) {
       border-color: token('fill-accent-default');
       // 避免引起布局抖动

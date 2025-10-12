@@ -2,6 +2,7 @@
  * @fileOverview BEM 相关的 mixins
  */
 @use 'config';
+@use "sass:selector";
 
 /**
  * B - Block
@@ -80,3 +81,64 @@
   }
 }
 
+/**
+ * WHEN with implicit context (状态化上下文)
+ * 创建一个状态化的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用，
+ * 就像在块的顶层一样，自动处理复杂的后代选择器。
+ *
+ * 最佳实践:
+ * 当复合组件的根元素（Block）的状态需要改变其内部多个子元素（Element）
+ * 的样式时，请使用此 mixin。
+ *
+ * @param {string} $state - 状态的名称 (e.g., 'on', 'disabled')
+ * @example
+ *   @include b(toggle-switch) {
+ *     @include e(knob) { background-color: grey; }
+ *
+ *     @include when-with-context(on) {
+ *       @include e(knob) { background-color: blue; }
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-toggle-switch__knob { background-color: grey; }
+ *   .vf-toggle-switch.is-on .vf-toggle-switch__knob { background-color: blue; }
+ */
+@mixin when-with-context($state) {
+  $block-selector: &;
+  $stateful-selector: selector.append($block-selector, '.#{config.$namespace}-is-#{$state}');
+  @at-root #{$stateful-selector} {
+    #{$block-selector} {
+      @content;
+    }
+  }
+}
+
+/**
+ * MODIFIER with implicit context (修饰符上下文)
+ * 创建一个基于修饰符的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用。
+ *
+ * 最佳实践:
+ * 当块的某个变体（Modifier）需要改变其内部子元素（Element）的样式时，
+ * 请使用此 mixin。
+ *
+ * @param {string} $modifier - 修饰符的名称 (e.g., 'primary', 'text')
+ * @example
+ *   @include b(button) {
+ *     @include e(icon) { fill: black; }
+ *
+ *     @include m-with-context(primary) {
+ *       @include e(icon) { fill: white; }
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-button__icon { fill: black; }
+ *   .vf-button--primary .vf-button__icon { fill: white; }
+ */
+@mixin m-with-context($modifier) {
+  $block-selector: &;
+  @at-root #{&}--#{$modifier} {
+    #{$block-selector} {
+      @content;
+    }
+  }
+}
