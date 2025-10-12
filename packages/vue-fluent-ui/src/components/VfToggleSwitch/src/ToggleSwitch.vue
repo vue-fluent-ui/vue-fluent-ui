@@ -137,6 +137,7 @@ const switchId = useId()
       background-color: token('fill-accent-default');
     }
     @include e(knob) {
+      transform: translateY(-50%) translateX(20px);
       background-color: token('text-on-accent-fill-color-primary');
     }
   }
