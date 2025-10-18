@@ -1,5 +1,15 @@
-# Vue 3 + TypeScript + Vite
+# Playground
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+此包是 `vue-fluent-ui` 组件库的本地开发和调试环境。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+它是一个标准的 Vite + Vue 3 应用，用于在开发过程中方便地引入、使用和可视化测试组件库中的组件。
+
+## 如何运行
+
+在项目根目录下，执行以下命令来启动 Playground：
+
+```bash
+pnpm dev
+```
+
+这会启动一个本地开发服务器，你可以在其中实时查看组件的渲染效果和交互行为。
