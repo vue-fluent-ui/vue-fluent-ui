@@ -65,5 +65,8 @@
   "dependencies": {
     "@vueuse/core": "^13.6.0",
     "lodash": "^4.17.21"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
