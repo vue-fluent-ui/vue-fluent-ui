@@ -98,6 +98,7 @@
 - `@include when($name)`: **（原子组件）** 用于定义原子组件的状态。
 - `@include m-with-context($name)`: **（复合组件）** 用于创建修饰符上下文，以改变子元素样式。
 - `@include when-with-context($name)`: **（复合组件）** 用于创建状态上下文，以改变子元素样式。
+- `@include pseudo-with-context($name)`: **（复合组件）** 用于创建伪类上下文（如 `:hover`），以改变子元素样式。
 
 ## 总结
 

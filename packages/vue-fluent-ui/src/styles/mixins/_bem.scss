@@ -87,8 +87,8 @@
  * 就像在块的顶层一样，自动处理复杂的后代选择器。
  *
  * 最佳实践:
- * 当复合组件的根元素（Block）的状态需要改变其内部多个子元素（Element）
- * 的样式时，请使用此 mixin。
+ * 当父选择器（如块 `B` 或元素 `E`）的某个状态（State）需要改变
+ * 其后代 BEM 元素的样式时，请使用此 mixin。
  *
  * @param {string} $state - 状态的名称 (e.g., 'on', 'disabled')
  * @example
@@ -118,8 +118,8 @@
  * 创建一个基于修饰符的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用。
  *
  * 最佳实践:
- * 当块的某个变体（Modifier）需要改变其内部子元素（Element）的样式时，
- * 请使用此 mixin。
+ * 当父选择器（如块 `B` 或元素 `E`）的某个变体（Modifier）需要改变
+ * 其后代 BEM 元素的样式时，请使用此 mixin。
  *
  * @param {string} $modifier - 修饰符的名称 (e.g., 'primary', 'text')
  * @example
@@ -137,6 +137,37 @@
 @mixin m-with-context($modifier) {
   $block-selector: &;
   @at-root #{&}--#{$modifier} {
+    #{$block-selector} {
+      @content;
+    }
+  }
+}
+
+/**
+ * PSEUDO with implicit context (伪类上下文)
+ * 创建一个基于伪类的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用。
+ *
+ * 最佳实践:
+ * 当父选择器（如块 `B` 或元素 `E`）的某个伪类状态（如 `:hover`）需要改变
+ * 其后代 BEM 元素的样式时，请使用此 mixin。
+ *
+ * @param {string} $pseudo - 伪类的名称 (e.g., 'hover', 'focus')
+ * @example
+ *   @include b(button) {
+ *     @include e(icon) { fill: black; }
+ *
+ *     @include pseudo-with-context(hover) {
+ *       @include e(icon) { fill: blue; }
+ *     }
+ *   }
+ *   // CSS Output
+ *   .vf-button__icon { fill: black; }
+ *   .vf-button:hover .vf-button__icon { fill: blue; }
+ */
+@mixin pseudo-with-context($pseudo) {
+  $block-selector: &;
+  $pseudo-selector: selector.append($block-selector, ':#{$pseudo}');
+  @at-root #{$pseudo-selector} {
     #{$block-selector} {
       @content;
     }

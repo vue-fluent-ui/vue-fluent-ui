@@ -129,6 +129,10 @@ const switchId = useId()
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: token('text-secondary');
+    &:hover {
+      width: 14px;
+      height: 14px;
+    }
   }
   @include when-with-context(on) {
     @include e(track) {
