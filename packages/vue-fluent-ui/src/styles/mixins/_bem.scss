@@ -25,7 +25,7 @@ $E: null !default;
  * }
  */
 @mixin b($block) {
-  $B: $namespace + $namespace-separator + $block !global;
+  $B: config.$namespace + config.$namespace-separator + $block !global;
 
   .#{$B} {
     @content;
@@ -136,13 +136,13 @@ $E: null !default;
  * }
  *
  * // CSS Output (假设 namespace 为 'vf'):
- * .vf-button.vf-disabled {
+ * .vf-button.vf-is-disabled {
  *   cursor: not-allowed;
  * }
  */
 @mixin when($state) {
   @at-root {
-    &.#{config.$namespace+config.$namespace-separator+$state} {
+    &.#{config.$namespace+config.$namespace-separator+'is-'+$state} {
       @content;
     }
   }
