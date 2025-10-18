@@ -188,3 +188,17 @@ $E: null !default;
   $is-equivalent: selector.is-superselector($selector,$blockSelector) and selector.is-superselector($blockSelector,$selector);
   @return not $is-equivalent;
 }
+
+/**
+ * @name be
+ * @description 生成一个 BEM Block-Element 类名 (如: block__element)。
+ * @param {String} $block - Block 的名称。
+ * @param {String} $element - Element 的名称。
+ * @returns {String} - 生成的 Block-Element 类名。
+ *
+ * @example
+ * #{be('toggle-switch', 'track')} // 返回: 'vf-toggle-switch__track'
+ */
+@function be($block, $element) {
+  @return config.$namespace + config.$namespace-separator + $block + config.$element-separator + $element;
+}

@@ -80,22 +80,29 @@ const switchId = useId()
 <style lang="scss">
 @use "@/styles/mixins/mixins" as *;
 
-@include b(toggle-switch) {
+$block: 'toggle-switch';
+@include b($block) {
   display: inline-block;
   min-width: 154px;
   // todo focus visual margin
 
   // 隐藏input
   @include e(input) {
-    border: 0;
+    position: absolute;
+    overflow: hidden;
     clip: rect(0 0 0 0);
+    width: 1px;
     height: 1px;
     margin: -1px;
-    overflow: hidden;
     padding: 0;
-    position: absolute;
-    width: 1px;
     white-space: nowrap;
+    border: 0;
+    $focus-target: "." + be($block, "container");
+
+    &:focus-visible ~ #{$focus-target} {
+      outline: 2px solid token("stroke-focus-outer");
+      outline-offset: 3px;
+    }
   }
 
 
