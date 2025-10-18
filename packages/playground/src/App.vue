@@ -65,6 +65,22 @@ const switch1 = ref(false);
             <p>当前状态: {{ switch1 ? '开启' : '关闭' }}</p>
           </div>
         </div>
+
+        <div class="group">
+          <h3>禁用状态</h3>
+          <div class="button-row">
+            <VfToggleSwitch v-model="switch1" :disabled="true" />
+            <p>禁用开关 (当前状态: {{ switch1 ? '开启' : '关闭' }})</p>
+          </div>
+        </div>
+
+        <div class="group">
+          <h3>禁用且开启状态</h3>
+          <div class="button-row">
+            <VfToggleSwitch :disabled="true" :model-value="true" />
+            <p>禁用且开启的开关</p>
+          </div>
+        </div>
       </section>
     </div>
   </VfProvider>
