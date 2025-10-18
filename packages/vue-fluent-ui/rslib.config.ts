@@ -12,6 +12,10 @@ export default defineConfig({
                 minify: false,
             },
             bundle: false,
+            dts: {
+                bundle: false,
+
+            },
             redirect: {
                 style: {
                     path: true,
