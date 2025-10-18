@@ -122,6 +122,9 @@ export const getDefaultLightTheme = (): ThemeType => {
             controlFastAnimationAfter: '168ms',
             controlFasterAnimation: '83ms',
         },
+        easing: {
+            controlFastOutSlowInKeySpline: "cubic-bezier(0, 0, 0, 1)"
+        },
         // 暂时用不上
         highContrast: {
             systemColorWindowTextColor: "#1f1e33",

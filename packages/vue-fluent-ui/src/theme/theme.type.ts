@@ -137,6 +137,9 @@ export interface ThemeType {
         controlFastAnimationAfter: string;
         controlFasterAnimation: string;
     },
+    easing: {
+        controlFastOutSlowInKeySpline: string
+    }
     /**
      * 高对比度模式下的颜色定义。
      */
