@@ -4,7 +4,7 @@
   "version": "0.0.3",
   "type": "module",
   "description": "一个winui3/fluent design风格的vue组件库",
-  "author": "vue fluent ui team",
+  "author": "Vue-Fluent-UI Team",
   "license": "MIT",
   "keywords": [
     "vue",
