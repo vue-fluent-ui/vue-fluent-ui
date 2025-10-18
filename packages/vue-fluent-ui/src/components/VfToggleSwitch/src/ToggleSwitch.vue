@@ -96,6 +96,7 @@ const switchId = useId()
     width: 1px;
     white-space: nowrap;
   }
+  // Off
   @include e(wrapper) {
     display: inline-flex;
     align-items: center;
@@ -129,12 +130,9 @@ const switchId = useId()
     transform: translateY(-50%);
     border-radius: 50%;
     background-color: token('text-secondary');
-    &:hover {
-      width: 14px;
-      height: 14px;
-    }
   }
-  @include when-with-context(on) {
+  // On
+  @include when(on) {
     @include e(track) {
       border-color: token('fill-accent-default');
       // 避免引起布局抖动
@@ -144,7 +142,27 @@ const switchId = useId()
       transform: translateY(-50%) translateX(20px);
       background-color: token('text-on-accent-fill-color-primary');
     }
+
   }
+  // Hover
+  &:hover {
+    // Off
+    @include e(knob) {
+      width: 14px;
+      height: 14px;
+    }
+    @include e(track) {
+      background-color: token('fill-control-alt-tertiary');
+    }
+    // On
+    @include when(on) {
+      @include e(track) {
+        border-color: token('fill-accent-secondary');
+        background-color: token('fill-accent-secondary');
+      }
+    }
+  }
+
 
 }
 </style>
