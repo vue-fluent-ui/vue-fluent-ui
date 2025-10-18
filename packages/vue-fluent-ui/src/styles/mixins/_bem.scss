@@ -149,6 +149,33 @@ $E: null !default;
 }
 
 /**
+ * @name when-not
+ * @description 创建一个状态否定类，用于表示组件不处于某种状态（如 not disabled, not active）。
+ * 状态否定类会以命名空间为前缀，并与当前选择器组合。
+ * @param {String} $state - 状态名称。
+ *
+ * @example
+ * @include b(button) {
+ *   @include when-not(disabled) {
+ *     cursor: pointer;
+ *   }
+ * }
+ *
+ * // CSS Output (假设 namespace 为 'vf'):
+ * .vf-button:not(.vf-is-disabled) {
+ *   cursor: pointer;
+ * }
+ */
+@mixin when-not($state) {
+  $current-selector: config.$namespace + config.$namespace-separator + 'is-'+$state;
+  @at-root {
+    &:not(.#{$current-selector}) {
+      @content;
+    }
+  }
+}
+
+/**
  * @description 内部辅助函数，用于判断当前选择器 (&) 是否为纯粹的 Block 选择器。
  *              例如，当在 `.theme-dark .vf-button` 中使用 @include e 时，& 不是纯粹的 `.vf-button`，
  *              此函数将返回 true，从而触发特殊选择器生成逻辑。
