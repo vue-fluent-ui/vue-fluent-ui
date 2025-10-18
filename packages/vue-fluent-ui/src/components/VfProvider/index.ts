@@ -3,4 +3,4 @@ import {withInstall} from "@/utils/install.ts";
 
 // noinspection JSUnusedGlobalSymbols
 export const VfProvider = withInstall(Provider);
-export * from "./src/Provider";
+export * from "./src/Provider.type.ts";

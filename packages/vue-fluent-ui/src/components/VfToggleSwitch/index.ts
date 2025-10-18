@@ -3,4 +3,4 @@ import {withInstall} from "@/utils/install.ts";
 
 // noinspection JSUnusedGlobalSymbols
 export const VfToggleSwitch = withInstall(ToggleSwitch)
-export * from './src/ToggleSwitch'
+export * from './src/ToggleSwitch.type.ts'
