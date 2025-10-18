@@ -26,7 +26,8 @@ const toggleSwitchClass = computed(() => {
   console.log(ns.is('on', checked.value))
   return [
     ns.b(),
-    ns.is('on', checked.value)
+    ns.is('on', checked.value),
+    ns.is('disabled', props.disabled),
   ]
 })
 
@@ -144,7 +145,6 @@ const switchId = useId()
     }
 
   }
-  // Hover
   &:hover {
     // Off
     @include e(knob) {
@@ -162,7 +162,21 @@ const switchId = useId()
       }
     }
   }
-
+  &:active {
+    @include e(knob) {
+      width: 17px;
+      height: 14px;
+    }
+    @include e(track) {
+      background-color: token('fill-control-alt-quarternary');
+    }
+    @include when(on) {
+      @include e(track) {
+        border-color: token('fill-accent-tertiary');
+        background-color: token('fill-accent-tertiary');
+      }
+    }
+  }
 
 }
 </style>
