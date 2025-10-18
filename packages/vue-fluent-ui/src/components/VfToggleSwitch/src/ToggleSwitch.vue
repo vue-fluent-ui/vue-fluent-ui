@@ -84,8 +84,6 @@ $block: 'toggle-switch';
 @include b($block) {
   display: inline-block;
   min-width: 154px;
-  // todo focus visual margin
-
   // 隐藏input
   @include e(input) {
     position: absolute;
@@ -100,8 +98,10 @@ $block: 'toggle-switch';
     $focus-target: "." + be($block, "container");
 
     &:focus-visible ~ #{$focus-target} {
-      outline: 2px solid token("stroke-focus-outer");
-      outline-offset: 3px;
+      &::after {
+        opacity: 1;
+        border-color: token('stroke-focus-outer');
+      }
     }
   }
 
@@ -115,9 +115,25 @@ $block: 'toggle-switch';
     cursor: pointer;
   }
   @include e(container) {
+    position: relative;
     display: inline-flex;
     align-items: center;
+    padding: 5px 0;
+    border-radius: token('radius-control-corner');
     gap: 12px;
+
+    &::after {
+      position: absolute;
+      top: -3px;
+      right: -7px;
+      bottom: -3px;
+      left: -7px;
+      content: '';
+      pointer-events: none;
+      opacity: 0;
+      border: 2px solid transparent;
+      border-radius: token('radius-overlay-corner');
+    }
   }
   @include e(track) {
     position: relative;
