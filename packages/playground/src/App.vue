@@ -74,13 +74,7 @@ const switch1 = ref(false);
           </div>
         </div>
 
-        <div class="group">
-          <h3>禁用且开启状态</h3>
-          <div class="button-row">
-            <VfToggleSwitch :disabled="true" :model-value="true" />
-            <p>禁用且开启的开关</p>
-          </div>
-        </div>
+
       </section>
     </div>
   </VfProvider>
