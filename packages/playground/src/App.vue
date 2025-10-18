@@ -73,6 +73,7 @@ const switch1 = ref(false);
 <style>
 body {
   margin: 0;
+  background-color: rgb(243, 243, 243);
 }
 
 .playground-container {
