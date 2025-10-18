@@ -98,7 +98,7 @@ const switchId = useId()
     white-space: nowrap;
   }
 
-  // Off
+
   @include e(wrapper) {
     display: inline-flex;
     align-items: center;
@@ -125,13 +125,14 @@ const switchId = useId()
   }
   @include e(knob) {
     position: absolute;
-    top: 50%;
-    left: 3px;
-    width: 12px;
-    height: 12px;
-    transform: translateY(-50%);
-    border-radius: 50%;
+    top: -1px;
+    left: -1px;
+    width: 22px;
+    height: 20px;
+    transform: translateX(0);
+    border-radius: 20px;
     background-color: token('text-secondary');
+    clip-path: inset(4px 6px 4px 4px round 20px);
   }
 
   // On
@@ -142,7 +143,7 @@ const switchId = useId()
       background-color: token('fill-accent-default');
     }
     @include e(knob) {
-      transform: translateY(-50%) translateX(20px);
+      transform: translateX(20px);
       background-color: token('text-on-accent-fill-color-primary');
     }
 
@@ -150,10 +151,8 @@ const switchId = useId()
 
   @include when-not(disabled) {
     &:hover {
-      // Off
       @include e(knob) {
-        width: 14px;
-        height: 14px;
+        clip-path: inset(3px 5px 3px 3px round 20px);
       }
       @include e(track) {
         background-color: token('fill-control-alt-tertiary');
@@ -164,13 +163,12 @@ const switchId = useId()
           border-color: token('fill-accent-secondary');
           background-color: token('fill-accent-secondary');
         }
+
       }
     }
     &:active {
-      // Off
       @include e(knob) {
-        width: 17px;
-        height: 14px;
+        clip-path: inset(3px round 20px);
       }
       @include e(track) {
         background-color: token('fill-control-alt-quarternary');
@@ -180,6 +178,9 @@ const switchId = useId()
         @include e(track) {
           border-color: token('fill-accent-tertiary');
           background-color: token('fill-accent-tertiary');
+        }
+        @include e(knob) {
+          transform: translateX(18px);
         }
       }
     }
@@ -191,7 +192,6 @@ const switchId = useId()
       cursor: not-allowed;
       color: token('text-disabled');
     }
-    // Off
     @include e(track) {
       border-color: token('stroke-control-strong-disabled');
       background-color: token('fill-control-alt-disabled');
