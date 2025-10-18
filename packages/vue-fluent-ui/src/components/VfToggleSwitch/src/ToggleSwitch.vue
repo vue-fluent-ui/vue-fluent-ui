@@ -97,6 +97,7 @@ const switchId = useId()
     width: 1px;
     white-space: nowrap;
   }
+
   // Off
   @include e(wrapper) {
     display: inline-flex;
@@ -132,6 +133,7 @@ const switchId = useId()
     border-radius: 50%;
     background-color: token('text-secondary');
   }
+
   // On
   @include when(on) {
     @include e(track) {
@@ -145,35 +147,66 @@ const switchId = useId()
     }
 
   }
-  &:hover {
-    // Off
-    @include e(knob) {
-      width: 14px;
-      height: 14px;
+
+  @include when-not(disabled) {
+    &:hover {
+      // Off
+      @include e(knob) {
+        width: 14px;
+        height: 14px;
+      }
+      @include e(track) {
+        background-color: token('fill-control-alt-tertiary');
+      }
+      // On
+      @include when(on) {
+        @include e(track) {
+          border-color: token('fill-accent-secondary');
+          background-color: token('fill-accent-secondary');
+        }
+      }
     }
+    &:active {
+      // Off
+      @include e(knob) {
+        width: 17px;
+        height: 14px;
+      }
+      @include e(track) {
+        background-color: token('fill-control-alt-quarternary');
+      }
+      // On
+      @include when(on) {
+        @include e(track) {
+          border-color: token('fill-accent-tertiary');
+          background-color: token('fill-accent-tertiary');
+        }
+      }
+    }
+  }
+
+  // 禁用
+  @include when(disabled) {
+    @include e(wrapper) {
+      cursor: default;
+      color: token('text-disabled');
+    }
+    // Off
     @include e(track) {
-      background-color: token('fill-control-alt-tertiary');
+      border-color: token('stroke-control-strong-disabled');
+      background-color: token('fill-control-alt-disabled');
+    }
+    @include e(knob) {
+      background-color: token('text-disabled');
     }
     // On
     @include when(on) {
       @include e(track) {
-        border-color: token('fill-accent-secondary');
-        background-color: token('fill-accent-secondary');
+        border-color: token('fill-accent-disabled');
+        background-color: token('fill-accent-disabled');
       }
-    }
-  }
-  &:active {
-    @include e(knob) {
-      width: 17px;
-      height: 14px;
-    }
-    @include e(track) {
-      background-color: token('fill-control-alt-quarternary');
-    }
-    @include when(on) {
-      @include e(track) {
-        border-color: token('fill-accent-tertiary');
-        background-color: token('fill-accent-tertiary');
+      @include e(knob) {
+        background-color: token('text-on-accent-fill-color-disabled');
       }
     }
   }
