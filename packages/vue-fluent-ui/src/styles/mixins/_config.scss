@@ -7,3 +7,15 @@
  * @description 全局命名空间
  */
 $namespace: 'vf' !default;
+/**
+ * @description 命名空间分隔符
+ */
+$namespace-separator: '-' !default;
+/**
+ * @description 元素分隔符
+ */
+$element-separator: '__' !default;
+/**
+ * @description 修改符分隔符
+ */
+$modifier-separator: '--' !default;

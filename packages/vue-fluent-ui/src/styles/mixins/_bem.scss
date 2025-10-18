@@ -1,175 +1,163 @@
 /**
  * @fileOverview BEM 相关的 mixins
+ * @description 提供了 b, e, m, when 四个核心 mixin，用于快速、规范地编写 BEM 风格的 SCSS。
  */
 @use 'config';
 @use "sass:selector";
 
-/**
- * B - Block
- * 创建一个 BEM 块选择器。
- *
- * @param {string} $block - 块的名称
+// Block, Element 的简写，作为全局变量，方便在 mixin 间通信。
+$B: null !default;
+$E: null !default;
 
+/**
+ * @name b
+ * @description 创建一个 BEM Block (块)。
+ * @param {String} $block - Block 的名称。
+ *
+ * @example
+ * @include b(button) {
+ *   color: red;
+ * }
+ *
+ * // CSS Output:
+ * .vf-button {
+ *   color: red;
+ * }
  */
 @mixin b($block) {
-  $namespace: #{config.$namespace}-#{$block};
-  .#{$namespace} {
+  $B: $namespace + $namespace-separator + $block !global;
+
+  .#{$B} {
     @content;
   }
 }
 
 /**
- * E - Element
- * 创建一个 BEM 元素选择器，必须在块或另一个元素内部使用
- * @param {string} $element - 元素的名称
+ * @name e
+ * @description 创建一个 BEM Element (元素)。必须在 b (Block) 内部使用。
+ * @param {String} $element - Element 的名称。
+ *
  * @example
- *   @include b(button) {
- *     @include e(icon) {
- *       font-size: 14px;
+ * @include b(card) {
+ *   @include e(header) {
+ *     font-size: 16px;
+ *   }
+ * }
+ *
+ * // CSS Output:
+ * .vf-card__header {
+ *   font-size: 16px;
+ * }
+ *
+ * // 嵌套或复杂选择器场景
+ * .theme-dark {
+ *   @include b(card) {
+ *     @include e(header) {
+ *       color: white;
  *     }
  *   }
- *   // CSS Output
- *   .vf-button__icon {
- *     font-size: 14px;
- *   }
+ * }
+ *
+ * // CSS Output:
+ * .theme-dark .vf-card .vf-card__header {
+ *   color: white;
+ * }
  */
 @mixin e($element) {
-  &__#{$element} {
-    @content;
+  $E: $element !global;
+  $selector: &;
+  $currentSelector: #{'.' + $B + config.$element-separator + $element};
+  @if hitAllSpecialRules($selector) {
+    @at-root {
+      #{$selector} {
+        #{$currentSelector} {
+          @content;
+        }
+      }
+    }
+  } @else {
+    @at-root {
+      #{$currentSelector} {
+        @content;
+      }
+    }
   }
 }
 
 /**
- * M - Modifier
- * 创建一个 BEM 修饰符选择器，用于修饰块或元素
- * @param {string} $modifier - 修饰符的名称
+ * @name m
+ * @description 创建一个 BEM Modifier (修饰符)。可以在 b (Block) 或 e (Element) 内部使用。
+ * @param {String} $modifier - Modifier 的名称。
+ *
  * @example
- *   @include b(button) {
- *     @include m(primary) {
- *       background-color: blue;
- *     }
- *   }
- *   // CSS Output
- *   .vf-button--primary {
+ * @include b(button) {
+ *   // ...
+ *   @include m(primary) {
  *     background-color: blue;
  *   }
- */
-@mixin m($modifier) {
-  &--#{$modifier} {
-    @content;
-  }
-}
-
-/**
- * State - 状态
- * 创建一个状态类选择器，对应 `is-` 前缀的类名
- * @param {string} $state - 状态的名称 (e.g., 'disabled', 'active')
- * @example
- *   @include b(button) {
- *     @include when(disabled) {
- *       opacity: 0.5;
- *     }
- *   }
- *   // CSS Output
- *   .vf-button.is-disabled {
+ * }
+ *
+ * @include e(icon) {
+ *   // ...
+ *   @include m(disabled) {
  *     opacity: 0.5;
  *   }
+ * }
+ *
+ * // CSS Output:
+ * .vf-button--primary {
+ *   background-color: blue;
+ * }
+ * .vf-button__icon--disabled {
+ *   opacity: 0.5;
+ * }
+ */
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: #{$selector + config.$modifier-separator + $modifier};
+  @at-root {
+    #{$currentSelector} {
+      @content;
+    }
+  }
+}
+
+/**
+ * @name when
+ * @description 创建一个状态类，用于表示组件的某种状态（如 disabled, active）。
+ * 状态类会以命名空间为前缀，并与当前选择器组合。
+ * @param {String} $state - 状态名称。
+ *
+ * @example
+ * @include b(button) {
+ *   @include when(disabled) {
+ *     cursor: not-allowed;
+ *   }
+ * }
+ *
+ * // CSS Output (假设 namespace 为 'vf'):
+ * .vf-button.vf-disabled {
+ *   cursor: not-allowed;
+ * }
  */
 @mixin when($state) {
-  &.#{config.$namespace}-is-#{$state} {
-    @content;
-  }
-}
-
-/**
- * WHEN with implicit context (状态化上下文)
- * 创建一个状态化的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用，
- * 就像在块的顶层一样，自动处理复杂的后代选择器。
- *
- * 最佳实践:
- * 当父选择器（如块 `B` 或元素 `E`）的某个状态（State）需要改变
- * 其后代 BEM 元素的样式时，请使用此 mixin。
- *
- * @param {string} $state - 状态的名称 (e.g., 'on', 'disabled')
- * @example
- *   @include b(toggle-switch) {
- *     @include e(knob) { background-color: grey; }
- *
- *     @include when-with-context(on) {
- *       @include e(knob) { background-color: blue; }
- *     }
- *   }
- *   // CSS Output
- *   .vf-toggle-switch__knob { background-color: grey; }
- *   .vf-toggle-switch.is-on .vf-toggle-switch__knob { background-color: blue; }
- */
-@mixin when-with-context($state) {
-  $block-selector: &;
-  $stateful-selector: selector.append($block-selector, '.#{config.$namespace}-is-#{$state}');
-  @at-root #{$stateful-selector} {
-    #{$block-selector} {
+  @at-root {
+    &.#{config.$namespace+config.$namespace-separator+$state} {
       @content;
     }
   }
 }
 
 /**
- * MODIFIER with implicit context (修饰符上下文)
- * 创建一个基于修饰符的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用。
- *
- * 最佳实践:
- * 当父选择器（如块 `B` 或元素 `E`）的某个变体（Modifier）需要改变
- * 其后代 BEM 元素的样式时，请使用此 mixin。
- *
- * @param {string} $modifier - 修饰符的名称 (e.g., 'primary', 'text')
- * @example
- *   @include b(button) {
- *     @include e(icon) { fill: black; }
- *
- *     @include m-with-context(primary) {
- *       @include e(icon) { fill: white; }
- *     }
- *   }
- *   // CSS Output
- *   .vf-button__icon { fill: black; }
- *   .vf-button--primary .vf-button__icon { fill: white; }
+ * @description 内部辅助函数，用于判断当前选择器 (&) 是否为纯粹的 Block 选择器。
+ *              例如，当在 `.theme-dark .vf-button` 中使用 @include e 时，& 不是纯粹的 `.vf-button`，
+ *              此函数将返回 true，从而触发特殊选择器生成逻辑。
+ * @param {String} $selector - 当前上下文选择器 (&)。
+ * @returns {Boolean} - 如果选择器比 Block 选择器更复杂，则返回 true。
  */
-@mixin m-with-context($modifier) {
-  $block-selector: &;
-  @at-root #{&}--#{$modifier} {
-    #{$block-selector} {
-      @content;
-    }
-  }
-}
-
-/**
- * PSEUDO with implicit context (伪类上下文)
- * 创建一个基于伪类的后代上下文，允许 e 和 m 等 mixin 在其中无缝使用。
- *
- * 最佳实践:
- * 当父选择器（如块 `B` 或元素 `E`）的某个伪类状态（如 `:hover`）需要改变
- * 其后代 BEM 元素的样式时，请使用此 mixin。
- *
- * @param {string} $pseudo - 伪类的名称 (e.g., 'hover', 'focus')
- * @example
- *   @include b(button) {
- *     @include e(icon) { fill: black; }
- *
- *     @include pseudo-with-context(hover) {
- *       @include e(icon) { fill: blue; }
- *     }
- *   }
- *   // CSS Output
- *   .vf-button__icon { fill: black; }
- *   .vf-button:hover .vf-button__icon { fill: blue; }
- */
-@mixin pseudo-with-context($pseudo) {
-  $block-selector: &;
-  $pseudo-selector: selector.append($block-selector, ':#{$pseudo}');
-  @at-root #{$pseudo-selector} {
-    #{$block-selector} {
-      @content;
-    }
-  }
+@function hitAllSpecialRules($selector) {
+  $blockSelector: "." + $B;
+  // 检查 $selector 和 $blockSelector 是否完全等价
+  $is-equivalent: selector.is-superselector($selector,$blockSelector) and selector.is-superselector($blockSelector,$selector);
+  @return not $is-equivalent;
 }
