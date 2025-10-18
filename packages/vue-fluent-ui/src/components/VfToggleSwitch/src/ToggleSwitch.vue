@@ -202,7 +202,7 @@ const switchId = useId()
     // On
     @include when(on) {
       @include e(track) {
-        border-color: token('fill-accent-disabled');
+        border: none;
         background-color: token('fill-accent-disabled');
       }
       @include e(knob) {
