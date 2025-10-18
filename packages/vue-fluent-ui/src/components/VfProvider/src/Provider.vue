@@ -4,7 +4,8 @@
 import {createStyle, getDefaultLightTheme} from "@/theme";
 import {useStyleTag} from "@vueuse/core";
 import {onUnmounted} from "vue";
-// 暂时写死
+import "@/styles/index.scss"
+// todo 暂时写死
 const theme = getDefaultLightTheme();
 const cssString = createStyle(theme);
 const {unload} = useStyleTag(cssString);
@@ -18,7 +19,3 @@ onUnmounted(() => {
   <slot></slot>
 
 </template>
-
-<style lang="scss">
-@use "@/styles/index";
-</style>

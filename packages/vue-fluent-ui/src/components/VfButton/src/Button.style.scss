@@ -1,0 +1,80 @@
+@use "@/styles/mixins/mixins" as *;
+
+@include b(button) {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 11px 6px 11px;
+  cursor: default;
+  user-select: none;
+  transition-timing-function: ease;
+  transition-duration: 83ms;
+  transition-property: background;
+  text-align: center;
+  border: 1px solid;
+  outline: none;
+
+  // 聚焦颜色
+  &:focus-visible {
+    box-shadow: 0 0 0 1px token('stroke-focus-inner'),
+    0 0 0 3px token('stroke-focus-outer');
+  }
+  // variant
+  @include m(standard) {
+    color: token('text-primary');
+    border-color: token('border-control-elevation');
+    background-color: token('fill-control-default');
+    &:hover {
+      background-color: token('fill-control-secondary');
+    }
+    &:active {
+      color: token('text-secondary');
+      border-color: token("stroke-control-default");
+      background-color: token('fill-control-tertiary');
+    }
+    &:disabled {
+      color: token('text-disabled');
+      border-color: token('stroke-control-default');
+      background-color: token('fill-control-disabled');
+    }
+  }
+  @include m(accent) {
+    color: token('text-on-accent-fill-color-primary');
+    border-color: token('border-accent-control-elevation');
+    background-color: token('fill-accent-default');
+    // todo border color这里是inner的，不是outerEdge的 可选修复
+    &:hover {
+      background-color: token('fill-accent-secondary');
+    }
+    &:active {
+      color: token('text-on-accent-fill-color-secondary');
+      border-color: token('fill-control-transparent');
+      background-color: token('fill-accent-tertiary');
+
+    }
+    &:disabled {
+      color: token('text-on-accent-fill-color-disabled');
+      border-color: token('fill-control-transparent');
+      background-color: token('fill-accent-disabled');
+    }
+  }
+  // shape
+  @include m(rounded) {
+    border-radius: token('radius-control-corner');
+  }
+  @include m(circular) {
+    border-radius: token('radius-circular');
+  }
+  @include m(square) {
+    border-radius: 0;
+  }
+  // 状态
+  @include when(disabled) {
+    cursor: default;
+  }
+
+}

@@ -3,6 +3,28 @@
   "private": false,
   "version": "0.0.3",
   "type": "module",
+  "description": "一个winui3/fluent design风格的vue组件库",
+  "author": "Vue-Fluent-UI Team",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "fluent",
+    "fluent-design",
+    "winui",
+    "winui3",
+    "ui-library",
+    "component-library",
+    "design-system"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vue-fluent-ui/vue-fluent-ui.git"
+  },
+  "homepage": "https://github.com/vue-fluent-ui/vue-fluent-ui",
+  "bugs": {
+    "url": "https://github.com/vue-fluent-ui/vue-fluent-ui/issues"
+  },
   "module": "./dist/index.js",
   "main": "./dist/index.js",
   "types": "./dist/src/index.d.ts",
@@ -11,8 +33,7 @@
       "types": "./dist/src/index.d.ts",
       "import": "./dist/index.js",
       "default": "./dist/index.js"
-    },
-    "./style.css": "./dist/index.css"
+    }
   },
   "files": [
     "dist"
