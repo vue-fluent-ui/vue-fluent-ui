@@ -3,7 +3,8 @@
 Vue Fluent UI 是一个致力于在 Vue.js 中复刻 Microsoft WinUI 3 视觉风格与交互体验的组件库。
 
 有关项目的详细信息、贡献指南和发展路线图，请访问我们的 [主仓库](https://github.com/your-username/vue-fluent-ui)。
-
+> 本项目还处于很早期的开发阶段，API、组件、特性等都尚未稳定。组件数量尚未达到可用标准
+> 请勿在生产环境中使用！
 ## 📦 安装
 
 ```bash
