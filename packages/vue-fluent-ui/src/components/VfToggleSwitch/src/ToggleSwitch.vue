@@ -115,13 +115,16 @@ const switchId = useId()
   @include e(track) {
     position: relative;
     display: inline-block;
+    flex-shrink: 0;
     box-sizing: border-box;
     width: 40px;
     height: 20px;
+    transition-timing-function: token("easing-control-fast-out-slow-in-key-spline");
+    transition-duration: token('duration-control-fast-animation');
+    transition-property: background-color, border-color;
+    border: 1px solid token('stroke-control-strong-default');
     border-radius: 10px; // winui3这里是写死的
     background-color: token('fill-control-alt-secondary');
-    border: 1px solid token('stroke-control-strong-default');
-    flex-shrink: 0;
   }
   @include e(knob) {
     position: absolute;
@@ -129,6 +132,9 @@ const switchId = useId()
     left: -1px;
     width: 22px;
     height: 20px;
+    transition-timing-function: token("easing-control-fast-out-slow-in-key-spline");
+    transition-duration: token('duration-control-fast-animation');
+    transition-property: transform, background-color, clip-path;
     transform: translateX(0);
     border-radius: 20px;
     background-color: token('text-secondary');
