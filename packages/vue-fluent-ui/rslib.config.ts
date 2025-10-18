@@ -8,10 +8,16 @@ export default defineConfig({
     lib: [
         {
             format: 'esm',
-            dts: true,
             output: {
                 minify: false,
             },
+            bundle: false,
+            redirect: {
+                style: {
+                    path: true,
+                    extension: true
+                }
+            }
         },
     ],
     output: {
