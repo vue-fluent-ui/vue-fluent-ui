@@ -188,7 +188,7 @@ const switchId = useId()
   // 禁用
   @include when(disabled) {
     @include e(wrapper) {
-      cursor: default;
+      cursor: not-allowed;
       color: token('text-disabled');
     }
     // Off
