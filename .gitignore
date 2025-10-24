@@ -10,6 +10,10 @@ crashlytics-build.properties
 fabric.properties
 cmake-build-*/
 
+# Qwen and Gemini AI assistant folders
+.qwen/
+.gemini/
+
 # Windows
 Thumbs.db
 Thumbs.db:encryptable
