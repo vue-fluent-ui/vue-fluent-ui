@@ -60,9 +60,13 @@ const main = async () => {
     spinner.start("正在生成组件文件...");
     const templatesDir = path.resolve(__dirname, 'templates');
     const vueTplPath = path.resolve(templatesDir, 'vue.tpl');
+      const typeTplPath = path.resolve(templatesDir, "type.ts.tpl");
+      const styleTplPath = path.resolve(templatesDir, "style.scss.tpl");
     const indexTplPath = path.resolve(templatesDir, 'index.ts.tpl');
 
     const vueTpl = fs.readFileSync(vueTplPath, 'utf-8');
+      const typeTpl = fs.readFileSync(typeTplPath, "utf-8");
+      const styleTpl = fs.readFileSync(styleTplPath, "utf-8");
     const indexTpl = fs.readFileSync(indexTplPath, 'utf-8');
 
     const toKebabCase = (str) => str.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, '$1-$2').toLowerCase();
@@ -73,10 +77,13 @@ const main = async () => {
         .replace(/__COMPONENT_NAME_KEBAB__/g, componentNameKebab);
 
     const vueContent = replacePlaceholders(vueTpl);
+      const typeContent = replacePlaceholders(typeTpl);
+      const styleContent = replacePlaceholders(styleTpl);
     const indexContent = replacePlaceholders(indexTpl);
 
     fs.writeFileSync(path.resolve(srcDir, `${componentNamePascal}.vue`), vueContent);
-    fs.writeFileSync(path.resolve(srcDir, `${componentNamePascal}.ts`), ''); // 创建空的 .ts 文件
+      fs.writeFileSync(path.resolve(srcDir, `${componentNamePascal}.type.ts`), typeContent); // 创建类型定义文件
+      fs.writeFileSync(path.resolve(srcDir, `${componentNamePascal}.style.scss`), styleContent); // 创建样式文件
     fs.writeFileSync(path.resolve(componentDir, 'index.ts'), indexContent);
     spinner.succeed(chalk.green(`组件 Vf${componentNamePascal} 文件创建成功。`));
 
