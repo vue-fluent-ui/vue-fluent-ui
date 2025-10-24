@@ -22,9 +22,9 @@ const buttonClass = computed(() => {
 
 <template>
   <button
-      :disabled="props.disabled"
       :aria-disabled="props.disabled"
       :class="buttonClass"
+      :disabled="props.disabled"
   >
     <slot></slot>
   </button>

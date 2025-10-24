@@ -43,14 +43,14 @@ const switchId = useId()
       <!--隐藏的checkbox-->
       <input
           :id="switchId"
-          :checked="checked"
-          :disabled="props.disabled"
           :aria-checked="checked"
-          role="switch"
-          type="checkbox"
           :aria-disabled="props.disabled"
           :aria-label="props.header || 'Toggle Switch'"
+          :checked="checked"
           :class="ns.e('input')"
+          :disabled="props.disabled"
+          role="switch"
+          type="checkbox"
           @change="handleChange"
       />
       <!--header部分-->
